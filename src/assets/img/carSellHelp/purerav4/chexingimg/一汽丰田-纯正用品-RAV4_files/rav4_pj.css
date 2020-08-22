@@ -1,0 +1,46 @@
+@charset "utf-8";
+.colorBox .colorBox2{
+	background: url(/statics/images/chexingimg/rav4_boutique/color/color1.png) no-repeat;
+	background-size: .3rem .3rem;
+}
+.colorBox .colorBox5{
+	background: url(/statics/images/chexingimg/rav4_boutique/color/color5.png) no-repeat;
+	background-size: .3rem .3rem;
+}
+.hty_cxBg .wzjp_Middle_2{
+	top: 2.15rem;
+	left: 2.55rem;
+	width: 0.55rem;
+}
+.hty_cxBg .wzjp_Middle_5{
+	top: 0.19rem;
+	left: 4.4rem;
+	width: 1.1rem;	
+}
+.hty_cxBg .wzjp_Middle_4{
+	top: 2.3rem;
+	left: 4.25rem;
+	width: 1.5rem;
+	height: auto;
+}
+.hty_cxBg .wzjp_Middle_3{
+	top: 0.8rem;
+	left: 4rem;
+	width: 2.4rem;
+}
+/*.hty_cxBg .D180{
+	margin-left: -6.3rem;
+	margin-top: -2.5rem;
+}*/
+.hty_cxBg .wzjp_behind_4{
+	height: auto;
+	width: 2.5rem;
+	top: 0.84rem;
+	left: 2.99rem;
+}
+.hty_cxBg .wzjp_behind_5{
+	width: 0.3rem;
+	top: 2.32rem;
+	left: 2.85rem;
+	height: auto;
+}

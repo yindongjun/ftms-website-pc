@@ -1,0 +1,188 @@
+.handleHonestServer {
+  margin: 0 auto;
+  width: 100%;
+  h2 {
+    width: 14rem;
+    font-size: .3rem;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: .39rem;
+    border-bottom: .01rem solid rgba(51, 51, 51, .18);
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 15px;
+    color: #000;
+    padding-bottom: .05rem;
+  }
+
+  .honestServer {
+    background-color: #fafafa;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: .8rem;
+    >div {
+      padding: .4rem 0 .64rem;
+    }
+  }
+
+  .sixstep {
+    margin: .81rem auto 0;
+    position: relative;
+    width: 14rem;
+    >.explain {
+      padding: .39rem 0 .61rem;
+    }
+    .process {
+      position: relative;
+      height: 7rem;
+
+      >li {
+        position: absolute;
+        height: 2rem;
+        cursor: pointer;
+        >h3 {
+          font-size: .24rem;
+          font-weight: 600;
+          margin-bottom: .17rem;
+        }
+
+        >img {
+          width: 2.62rem;
+        }
+        &::after {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          height: 1.24rem;
+          width: 2.28rem;
+          position: absolute;
+          top: -1rem;
+          left: 1.2rem;
+          background-image: url("../../../../assets/img/serviceIntroduce/arr1.png");
+          background-size: 100% 100%;
+        }
+
+        &:first-of-type {
+          left: 0;
+          top: 50%;
+          margin-top: -1rem;
+        }
+
+        &:nth-of-type(2) {
+          top: 0;
+          left: 25%;
+          &::after {
+            width: 0.92rem;
+            height: 0.15rem;
+            top: 1rem;
+            left: 2.8rem;
+            background-image: url("../../../../assets/img/serviceIntroduce/arrR.png");
+            background-size: 100% 100%;
+          }
+        }
+
+        &:nth-of-type(3) {
+          &::after {
+            top: 1.6rem;
+            left: 2.8rem;
+            background-image: url("../../../../assets/img/serviceIntroduce/arr2.png");
+            background-size: 100% 100%;
+          }
+          >img {
+            width: 1.71rem;
+          }
+
+          top: 0;
+          left: 55%;
+        }
+
+        &:nth-of-type(4) {
+          height: 3rem;
+          right: 0;
+          top: 50%;
+          margin-top: -1rem;
+          >h3 {
+            margin-bottom: .17rem;
+          }
+          &::after {
+            top: 3.2rem;
+            left: -.9rem;
+            background-image: url("../../../../assets/img/serviceIntroduce/arr3.png");
+            background-size: 100% 100%;
+          }
+        }
+
+        &:nth-of-type(5) {
+          bottom: 0;
+          left: 55%;
+          &::after {
+            width: 0.92rem;
+            height: 0.15rem;
+            top: 1.27rem;
+            left: -1.25rem;
+            background-image: url("../../../../assets/img/serviceIntroduce/arrl.png");
+            background-size: 100% 100%;
+          }
+          >h3 {
+            margin-top: .17rem;
+          }
+        }
+
+        &:last-of-type {
+          bottom: 0;
+          left: 25%;
+          &::after {
+            top: .7rem;
+            left: -2.3rem;
+            background-image: url("../../../../assets/img/serviceIntroduce/arr4.png");
+            background-size: 100% 100%;
+          }
+          >h3 {
+            margin-top: .17rem;
+          }
+        }
+      }
+    }
+    .process-content {
+      position: absolute;
+      top: 5.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: left;
+      display: flex;
+      align-items: center;
+      >span {
+        text-align: center;
+        margin-right: .87rem;
+        >img {
+          display: block;
+          margin: 0 auto .13rem;
+          height: 0.48rem;
+        }
+        >h3 {
+          font-size: 13px;
+          font-weight: 600;
+          color: #d3b078;
+        }
+      }
+      >h3 {
+        font-size: 13px;
+        font-weight: 600;
+        color: #d3b078;
+        margin-right: .87rem;
+      }
+      >ul {
+        >li {
+          font-size: 13px;
+          color: #666;
+        }
+      }
+    }
+    .process-content-hide {
+      display: none;
+    }
+  }
+}

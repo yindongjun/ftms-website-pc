@@ -1,0 +1,214 @@
+.handleMyCredits {
+  margin: 0 auto;
+  width: 14rem;
+  >h2 {
+    font-size: .3rem;
+    font-weight: 600;
+    padding-bottom: .4rem;
+    border-bottom: .01rem solid rgba(0, 0, 0, .1);
+    margin-bottom: .6rem;
+  }
+  .MyCreditsTitle {
+    height: 0.5rem;
+    line-height: .5rem;
+    margin-bottom: .3rem;
+
+    >a {
+      display: inline-block;
+      text-align: left;
+      font-size: 15px;
+      font-weight: 600;
+      color: #d3b078;
+      float: left;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateY(-50%);
+        position: relative;
+        top: .12rem;
+        left: 0;
+        height: 0.28rem;
+        width: 0.28rem;
+        background-image: url("../../../assets/img/personsenter/return.png");
+        background-size: 100% 100%;
+        margin-right: .1rem;
+      }
+    }
+
+    >span {
+      display: inline-block;
+      float: right;
+      height: 100%;
+
+      >i {
+        display: inline-block;
+        height: 100%;
+        width: 2.2rem;
+        text-align: center;
+        border: .01rem solid rgba(0, 0, 0, .1);
+        font-size: 15px;
+        color: #000;
+        border-radius: .25rem;
+        font-weight: 600;
+
+        &:last-of-type {
+          margin-left: .2rem;
+        }
+      }
+
+      .sel-credits-type {
+        border: none;
+        background-color: #d3b078;
+        color: #fff;
+      }
+    }
+  }
+
+  .MyCreditsContent {
+    width: 100%;
+    border: .01rem solid rgba(0, 0, 0, .1);
+    border-top: .03rem solid #d3b078;
+    padding: .4rem .39rem .4rem .41rem;
+
+    .contentheader {
+      height: 0.4rem;
+      line-height: .4rem;
+      text-align: left;
+      margin-bottom: .4rem;
+
+      >label {
+        display: inline-block;
+        font-size: 13px;
+        margin-right: .2rem;
+      }
+
+      >i {
+        font-size: 13px;
+        color: #999;
+        display: inline-block;
+        margin-left: .19rem;
+      }
+
+      .ant-select-selection-selected-value {
+        font-size: 13px;
+      }
+
+      .ant-select-focused .ant-select-selection,
+      .ant-select-selection:focus,
+      .ant-select-selection:active,
+      .ant-select-selection:hover {
+        border-color: #d3b078;
+      }
+
+      >span {
+        float: right;
+        font-size: 15px;
+        font-weight: 600;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          position: relative;
+          top: .05rem;
+          left: 0;
+          height: 0.18rem;
+          width: 0.16rem;
+          background-image: url("../../../assets/img/personsenter/score.png");
+          background-size: 100% 100%;
+          margin-right: .06rem;
+        }
+
+        >i {
+          font-size: .28rem;
+          font-weight: 600;
+          color: #d3b078;
+          margin-left: .2rem;
+        }
+      }
+    }
+
+    .contentList {
+      width: 100%;
+      margin-bottom: .4rem;
+
+      >li {
+        width: 100%;
+        height: 0.59rem;
+        line-height: .59rem;
+        border-bottom: .01rem solid rgba(0, 0, 0, .1);
+        text-align: left;
+
+        >label {
+          font-size: 13px;
+          font-weight: 600;
+          color: #d3b078;
+          display: inline-block;
+          width: 11%;
+        }
+
+        >span {
+          font-size: 13px;
+          color: #000;
+        }
+
+        >i {
+          float: right;
+          font-size: 13px;
+          color: #999;
+        }
+
+        &:first-of-type {
+          border-top: .01rem solid rgba(0, 0, 0, .1);
+        }
+      }
+    }
+
+    .ant-pagination {
+      .ant-pagination-item {
+
+        &:focus,
+        &:hover {
+          border-color: #d3b078;
+
+          a {
+            color: #000;
+          }
+        }
+      }
+
+      .ant-pagination-prev:hover .ant-pagination-item-link,
+      .ant-pagination-next:hover .ant-pagination-item-link {
+        color: #d3b078;
+        border-color: #d3b078;
+      }
+
+      .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon,
+      .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon {
+        color: #d3b078;
+      }
+
+      .ant-pagination-options-quick-jumper input:hover {
+        border-color: #d3b078;
+      }
+
+      .ant-pagination-item-active {
+        background-color: #d3b078;
+        border: none;
+
+        a {
+          color: #fff;
+        }
+
+        &:hover {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

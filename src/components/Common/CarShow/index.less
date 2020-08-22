@@ -1,0 +1,321 @@
+.CarShowPage {
+  max-width: 19.2rem;
+  width: 100%;
+  height: 9.35rem;
+  position: relative;
+  top: .8rem;
+  background: url('../../../assets/img/officislSite/bgImg.png');
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  margin-bottom: .86rem;
+  .closebtn {
+    display: inline-block;
+    height: 0.45rem;
+    width: 0.45rem;
+    background: url('../../../assets/img/officislSite/carshow/close.png');
+    background-size: 100% 100%;
+    position: absolute;
+    right: 1rem;
+    top: .7rem;
+  }
+  .modal-options {
+    max-width: 19.2rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-size: 100% 100%;
+    height: 100%;
+    .ant-tabs-bottom-bar {
+      margin: 0 auto;
+      border-top: none!important;
+      .ant-tabs-nav-container {
+        width: 11.68rem;
+        margin: 0 auto;
+        height: 0.6rem;
+        line-height: .6rem;
+        background-color: rgba(255, 255, 255, .9);
+        border-radius: .3rem;
+        box-shadow: rgba(196, 196, 196, .68) .1rem .1rem .41rem .17rem;
+        .ant-tabs-nav-wrap {
+          height: .6rem;
+          line-height: .6rem;
+          width: 11.68rem;
+          display: flex;
+          justify-content: space-between;
+          .ant-tabs-nav {
+            height: 100%;
+            >div {
+              height: 100%;
+              .ant-tabs-tab {
+                width: 2.92rem;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                color: #000;
+                line-height: inherit;
+                border-bottom: 0;
+                border-radius: 0;
+                &:hover {
+                  &::before {
+                    color: #d3b078;
+                  }
+                }
+                img:hover {
+                  //transform: scale(1.1, 1.1);
+                  transition: 0.2s;
+                }
+              }
+              .ant-tabs-tab:first-child{
+                border-top-left-radius: 0.3rem;
+                border-bottom-left-radius: 0.3rem;
+              }
+              .ant-tabs-tab:last-child{
+                border-top-right-radius: 0.3rem;
+                border-bottom-right-radius: 0.3rem;
+              }
+              .ant-tabs-tab-disabled {
+                &:hover {
+                  &:after {
+                    content: '（敬请期待）';
+                    display: inline-block;
+                    vertical-align: middle;
+                    transform: translateY(-50%);
+                    height: 0.32rem;
+                    width: 1rem;
+                    //background-color: #000;
+                    //margin: .12rem .33rem 0;
+                    margin: 0 0.01rem 0
+                  }
+                }
+              }
+            }
+          }
+          .ant-tabs-nav .ant-tabs-tab-active {
+            color: #fff!important;
+            background-color: #d3b078;
+            font-weight: normal;
+            border: 0;
+          }
+          .ant-tabs-ink-bar-animated {
+            width: 0!important;
+          }
+        }
+      }
+    }
+    .car-options {
+      .ant-tabs-bottom-content.ant-tabs-content-no-animated {
+        // height: 6.25rem;
+        text-align: center;
+        img {
+          margin: 0 auto;
+          margin-top: .4rem;
+          display: block;
+          height: 3.83rem;
+          cursor: pointer;
+          //width: 16rem;
+        }
+        .carShow {
+          margin-top: .2rem;
+          margin-left: 1.59rem;
+          text-align: left;
+          h1 {
+            font-weight: 600;
+            font-size: .3rem;
+            margin-bottom: 0.05rem;
+            margin-top: .35rem;
+          }
+          span {
+            display: inline-block;
+            font-size: .2rem;
+            margin-bottom: .3rem;
+            &:first-of-type {
+              &:after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                transform: translateY(-50%);
+                height: 0.18rem;
+                width: 0.02rem;
+                background-color: #000;
+                //margin: .12rem .33rem 0;
+                margin: 0.12rem 0.1rem 0;
+              }
+            }
+          }
+          .carShowBtn {
+            li {
+              float: left;
+              height: 0.4rem;
+              width: 1.56rem;
+              border-radius: .2rem;
+              border: .01rem solid #000;
+              margin-right: .2rem;
+              line-height: .36rem;
+              text-align: center;
+              // transition: all .5s;
+              font-size: 13px;
+              font-weight: 600;
+              cursor: pointer;
+              &:hover {
+                background-color: #d3b078;
+                color: #fff;
+                border: none;
+                transition: color 0.2s
+              }
+            }
+          }
+        } 
+      }
+      .ant-tabs-bottom .ant-tabs-bottom-bar {
+        border: none;
+      }
+      .ant-tabs-tab-prev.ant-tabs-tab-arrow-show {
+        height: 1.2rem;
+        line-height: 1.2rem;
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          height: 0.4rem;
+          width: 0.4rem;
+          position: relative;
+          top: .7rem;
+          left: 0rem;
+          background-image: url("../../../assets/img/officislSite/carshow/arroe-left.png");
+          background-size: 100% 100%;
+        }
+        .ant-tabs-tab-prev-icon {
+          display: none!important;
+        }
+      }
+      .ant-tabs-tab-next.ant-tabs-tab-arrow-show {
+        height: 1.2rem;
+        line-height: 1.2rem;
+        &::before {
+          content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            height: 0.4rem;
+            width: 0.4rem;
+            position: relative;
+            top: .7rem;
+            right: 0rem;
+            background-image: url("../../../assets/img/officislSite/carshow/arrow-right.png");
+            background-size: 100% 100%;
+        }
+        .ant-tabs-tab-next-icon {
+          display: none!important;
+        }
+      }
+      .ant-tabs-nav-container {
+        height: auto;
+        width: 16rem!important;
+        margin: 0 auto!important;
+        box-shadow: none;
+        background: none;
+        padding-right: 34px;
+        .ant-tabs-nav-wrap {
+          height: 1.8rem;
+          width: 100%;
+          margin-top: 0;
+          margin-bottom: .28rem;
+          border-radius: 0%;
+          padding: 0;
+          padding-top: 0.1rem;
+          border: none;
+          display: flex;
+          justify-content: center;
+          .ant-tabs-nav {
+            width: 100%;
+            >div {
+              .ant-tabs-tab {
+                padding: 0;
+                margin: 0;
+                width: 2.85rem;
+                text-align: center;
+                border: none !important;
+                background: none;
+                >div {
+                  img {
+                    width: 72%;
+                    display: block;
+                    margin: 0 auto;
+                  }
+                  span {
+                    font-size: 13px;
+                    color: #1b1b1b;
+                  }
+                }
+                // &:first-of-type,
+                // &:nth-of-type(3) {
+                //   position: relative;
+                //   &::before {
+                //     content: '';
+                //     display: inline-block;
+                //     vertical-align: middle;
+                //     transform: translateY(-50%);
+                //     height: 0.28rem;
+                //     width: 0.3rem;
+                //     background-image: url("../../../assets/img/officislSite/carshow/showCar-xin.png");
+                //     background-size: 100% 100%;
+                //     position: relative;
+                //     top: 0.2rem;
+                //     left: -.8rem;
+                //   }
+                //   &::after {
+                //     content: '';
+                //     display: inline-block;
+                //     vertical-align: middle;
+                //     transform: translateY(-50%);
+                //     height: 0.27rem;
+                //     width: 0.38rem;
+                //     background-image: url("../../../assets/img/officislSite/carshow/showCar-vr360.png");
+                //     background-size: 100% 100%;
+                //     position: relative;
+                //     top: -1.68rem;
+                //     right: -0.85rem;
+                //   }
+                // }
+              }
+            }
+            .scaleCar{
+              position: relative;
+              padding-top: 0.2rem;
+              i{
+                display: inline-block;
+                width: 0.3rem;
+                height: 0.3rem;
+                position: absolute;
+                top: 0;
+              }
+              .isNew{
+                left: 0;
+                background: url("../../../assets/img/carBrandModels/new.png") no-repeat;
+                background-size: 100%;
+                background-position: 0 0;
+              }
+              .isThreeD{
+                right: 0;
+                background: url("../../../assets/img/carBrandModels/threeD.png") no-repeat;
+                background-size: 100%;
+                background-position: 0 0;
+              }
+            }
+          }
+          .ant-tabs-nav .ant-tabs-tab-active {
+            background: none;
+            color: #000;
+            img{
+              transform: scale(1.4);
+            }
+          }
+        }
+        .ant-tabs-tab-prev.ant-tabs-tab-arrow-show, .ant-tabs-tab-next.ant-tabs-tab-arrow-show{
+          width: auto;
+        }
+      }
+    }
+  }
+}

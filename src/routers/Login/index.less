@@ -1,0 +1,226 @@
+.handleLoginModel {
+  margin: 0 auto;
+  max-width: 19.2rem;
+  .handleLogin {
+    width: 100%;
+    margin: 0 auto;
+    height: 8.43rem;
+    background: url('../../assets/img/login/background.png');
+    background-size: 100% 100%;
+    position: relative;
+    top: .8rem;
+    left: 0;
+    h2 {
+      font-size: .24rem;
+      color: #1b1b1b;
+      margin-bottom: .3rem;
+      font-weight: 600;
+      letter-spacing: .08rem;
+    }
+    .mobileBox,
+    .ImgCodeBox,
+    //.MobileCodeBox,
+    .mobileBox,
+    .settingPwdBox,
+    .ConfirmPwdBox,
+    .UserNameBox {
+      height: 0.5rem;
+      line-height: .5rem;
+      width: 100%;
+      border-radius: .25rem;
+      border: .01rem solid #a0a0a0;
+      margin-bottom: .29rem;
+      text-align: left;
+      padding-left: .19rem;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateY(-50%);
+        height: 0.2rem;
+        width: 0.14rem;
+        margin-top: .15rem;
+        background-image: url("../../assets/img/officislSite/phone.png");
+        background-size: 100% 100%;
+        margin-right: .15rem;
+      }
+      span {
+        display: inline-block;
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          height: 0.25rem;
+          width: 0.015rem;
+          background-color: #c9c9c9;
+          margin-top: .2rem;
+          margin-right: .2rem;
+        }
+      }
+      input {
+        border: none;
+        outline: medium;
+        height: 98%;
+        line-height: 98%;
+        font-size: 13px;
+        background-color: #ffffff00 !important;
+        width: 80%;
+      }
+    }
+    .ImgCodeBox {
+      position: relative;
+      &::before {
+        content: '';
+        height: 0.15rem;
+        width: 0.17rem;
+        margin-top: .1rem;
+        background-image: url("../../assets/img/login/codeImg.png");
+      }
+      i{
+        height: 100%;
+        display: inline-block;
+        position: absolute;
+        right: -0.03rem;
+        top: -0.02rem;
+        width: 28%;
+        text-align: center;
+        font-size: 13px;
+        color: #1b1b1b;
+        /* background: url(/static/media/imgCodePic.44402b95.png); */
+        background-size: 100% 100%;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+        img {
+          height: 100%;
+          border-top-right-radius: 0.25rem;
+          border-bottom-right-radius: 0.25rem;
+        }
+      }
+    }
+    .MobileCodeBox {
+      position: relative;
+      height: 0.5rem;
+      line-height: .5rem;
+      width: 100%;
+      border-radius: .25rem;
+      //border: .01rem solid #a0a0a0;
+      margin-bottom: .29rem;
+      text-align: left;
+      //padding-left: .19rem;
+      display: flex;
+      align-items: center;
+      div{
+        height: 0.5rem;
+        line-height: .5rem;
+        width: 65%;
+        border-radius: .25rem;
+        border: .01rem solid #a0a0a0;
+        text-align: left;
+        padding-left: .19rem;
+        display: flex;
+        align-items: center;
+        &::before {
+          content: '';
+          height: 0.17rem;
+          width: 0.17rem;
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          margin-top: .15rem;
+          margin-right: .15rem;
+          background-image: url("../../assets/img/login/codePhone.png");
+          background-size: 100% 100%;
+        }
+        span {
+          display: inline-block;
+          &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            height: 0.25rem;
+            width: 0.015rem;
+            background-color: #c9c9c9;
+            margin-top: .2rem;
+            margin-right: .2rem;
+          }
+        }
+        input {
+          border: none;
+          outline: medium;
+          height: 98%;
+          line-height: 98%;
+          font-size: 13px;
+          background-color: #ffffff00;
+          width: 68%;
+        }
+      }
+      i{
+        height: 100%;
+        display: inline-block;
+        // float: right;
+        position: absolute;
+        right: 0.01rem;
+        top: 0;
+        text-align: center;
+        font-size: 13px;
+        width: 30%;
+        color:rgb(27,27,27);
+        //background-color: rgba(153, 153, 153, .2);
+        // border-top-right-radius: .25rem;
+        // border-bottom-right-radius: .25rem;
+        //border: .01rem solid #ebebeb;
+        border-radius: .25rem;
+        cursor: pointer;
+      }
+    }
+    .UserNameBox {
+      &::before {
+        content: '';
+        height: 0.16rem;
+        width: 0.15rem;
+        margin-top: .1rem;
+        background-image: url("../../assets/img/login/user.png");
+      }
+    }
+    .settingPwdBox {
+      &::before {
+        content: '';
+        height: 0.18rem;
+        width: 0.14rem;
+        margin-top: .1rem;
+        background-image: url("../../assets/img/login/setPwd.png");
+      }
+    }
+    .ConfirmPwdBox {
+      &::before {
+        content: '';
+        height: 0.18rem;
+        width: 0.14rem;
+        margin-top: .1rem;
+        background-image: url("../../assets/img/login/confirm.png");
+      }
+    }
+    .login-btn,
+    .nextstep,
+    .submitbtn {
+      display: inline-block;
+      height: 0.5rem;
+      width: 4.1rem;
+      background-color: #d3b078;
+      border-radius: .25rem;
+      margin-bottom: .29rem;
+      line-height: .5rem;
+      font-size: .24rem;
+      color: #fff;
+      letter-spacing: .08rem;
+      cursor: pointer;
+    }
+    .submitbtn {
+      margin-top: .5rem;
+    }
+  }  
+}

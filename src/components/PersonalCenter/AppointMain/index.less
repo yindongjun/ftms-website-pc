@@ -1,0 +1,254 @@
+.handleAppointMain {
+  margin: 0 auto;
+  width: 14rem;
+  >h2 {
+    font-size: .3rem;
+    font-weight: 600;
+    padding-bottom: .4rem;
+    border-bottom: .01rem solid rgba(0, 0, 0, .1);
+    margin-bottom: .6rem;
+  }
+  >a {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #d3b078;
+    margin-bottom: .3rem;
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateY(-50%);
+      position: relative;
+      top: .12rem;
+      left: 0;
+      height: 0.28rem;
+      width: 0.28rem;
+      background-image: url("../../../assets/img/personsenter/return.png");
+      background-size: 100% 100%;
+      margin-right: .1rem;
+    }
+  }
+  .maintainList {
+    width: 100%;
+    border-bottom: none;
+    margin-bottom: 1rem;
+    >li {
+      width: 100%;
+      // height: 0.7rem;
+      line-height: .7rem;
+      // border-bottom: .01rem solid rgba(0, 0, 0, .1);
+      >div {
+        margin-bottom:.4rem;
+        border: .01rem solid rgba(0, 0, 0, .1);
+        >div {
+          width: 100%;
+          height: .5rem;
+          line-height:.5rem;
+          text-align: left;
+          background: #efefef;
+          padding-left:.4rem;
+          span {
+            font-size: .18rem;
+            &:first-of-type {
+              margin-right:.6rem;
+            }
+          }
+        }
+        >ul {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          height: 100%;
+          >li {
+            height: 1rem;
+            line-height: 1rem;
+            width: 12.5%;
+            font-size: .17rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #000;
+            &:nth-child(5) {
+              width: 16%;
+            }
+            &:last-of-type {
+              >span {
+                display: inline-block;
+                height: .44rem;
+                line-height: .44rem;
+                width: 1.3rem;
+                text-align: center;
+                background-color: #fff;
+                border-radius: .26rem;
+                font-size: 13px;
+                font-weight: 600;
+                color: #000;
+                border:.01rem solid #000;
+                cursor: pointer;
+                &:last-of-type {
+                  margin-left: .2rem;
+                }
+              }
+              >span:hover {
+                color: #fff;
+                background-color: #d3b078;
+                border: .01rem solid #d3b078;
+              }
+            }
+          &:first-of-type {
+            text-align:left;
+            padding-left: .39rem;
+            width: 16%;
+          }
+          }
+          &:first-of-type {
+            background-color: #d3b078;
+            li {
+                font-weight: 600;
+                color: #fff;
+                font-size: .2rem;
+                &:nth-child(5) {
+                  width: 14%;
+                }
+            }
+          }
+        }
+        &:first-of-type{
+          &::after {
+            content:".";/*加一段内容*/
+            display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+            height:0;/*避免生成的内容破坏原有布局高度*/
+            clear:both;/*清除浮动*/
+            visibility:hidden;/*让生成的内容不可见*/
+          }
+          >ul {
+            overflow:hidden;
+            &:first-of-type {
+              >li {
+                font-size: .2rem;
+                font-weight: 600;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      
+    }
+    .add_spec {
+      width: 32%;
+    }
+  }
+  .ant-pagination{
+    .ant-pagination-item {
+
+      &:focus,
+      &:hover {
+        border-color: #d3b078;
+      }
+      a {
+        color: #000;
+      }
+    }
+
+    .ant-pagination-prev:hover .ant-pagination-item-link,
+    .ant-pagination-next:hover .ant-pagination-item-link {
+      color: #d3b078;
+      border-color: #d3b078;
+    }
+
+    .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon,
+    .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon {
+      color: #d3b078;
+    }
+
+    .ant-pagination-options-quick-jumper input:hover {
+      border-color: #d3b078;
+    }
+
+    .ant-pagination-item-active {
+      background-color: #d3b078;
+      border: none;
+
+      a {
+        color: #fff;
+      }
+
+      &:hover {
+        a {
+          color: #fff;
+        }
+      }
+    }
+  } 
+}
+.cancelmodalbox {
+  .ant-modal {
+    width: 10rem!important;
+    height: 4.04rem;
+    .ant-modal-content {
+      padding: 0.8rem 2.65rem;
+      > .ant-modal-close {
+        position: absolute;
+        top: -0.15rem;
+        right: -0.15rem;
+        > .ant-modal-close-x{
+          background: rgb(211, 176, 120);
+          border-radius: 0.13rem;
+          width: 0.26rem;
+          height: 0.26rem;
+          color: #fff;
+          line-height: 0.28rem;
+        }
+      }
+      .ant-modal-header {
+        display: none;
+      }
+      .ant-modal-body {
+        text-align: center;
+        padding: 0;
+        >img {
+          width: .88rem;
+          display: block;
+          margin: 0 auto .29rem;
+        }
+        >p {
+          font-size: .28rem;
+          margin-bottom: .49rem;
+        }
+      }
+      .ant-modal-footer {
+        padding: 0;
+        text-align: center;
+        border: none;
+        // >div {
+          button {
+            width: 2.2rem;
+            text-align: center;
+            height: 0.5rem;
+            line-height: .5rem;
+            border-radius: .25rem;
+            font-size: 15px;
+            font-weight: 600;
+            border: .01rem solid #000;
+            background-color: rgba(0,0,0,0);
+            &:first-of-type {
+              background-color: #d3b078;
+              border: none;
+              >span {
+                color: #fff;
+              }
+            }
+            &:last-of-type {
+              // margin-left: .3rem;
+              background-color: #d3b078;
+              border: none;
+            }
+          }
+        // }
+      }
+    }
+  }
+}

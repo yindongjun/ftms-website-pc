@@ -1,0 +1,501 @@
+@charset "utf-8";
+#hty_nzjpBox,#hty_dzypBox,#hty_qtypBox{
+	display: none;
+}
+.hty_CpMenu{
+	height: 0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+	background: #000;
+	overflow: hidden;
+	padding: 0.02rem 0;
+}
+.hty_CpMenu li{
+	display: inline-block;
+	border-bottom: 0.02rem solid #000;
+	margin: 0 .3rem;
+}
+.hty_CpMenu li a{
+	display: block;
+	font-size: 13px;
+	color: #fff;
+}
+.hty_CpMenu li.active{
+	border-bottom: 0.02rem solid #FFD800;
+}
+/*车型切换*/
+.hty_cxBg{
+	height: 6.17rem;
+	background: url(../images/bg_mm1_02.jpg) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+.hty_cxBg .hty_peijBox{
+	display: inline-block;
+	position: relative;
+	width: 6.24rem;
+	height: 3.67rem;
+	margin-top: 1.5rem;
+	overflow: hidden;
+}
+.hty_cxBg .hty_imgPosint{
+	position: absolute;
+	display: none;
+}
+/*配件图片定位*/
+.hty_cxBg .wzjp_front_1{
+	top: 2.2rem;
+	left: .05rem;
+	width: 2.7rem;
+	height: auto;
+}
+.hty_cxBg .wzjp_front_2{
+	top: 2.15rem;
+	left: 2.33rem;
+	width: .73rem;
+	height: auto;
+}
+.hty_cxBg .wzjp_front_3{
+	top: .97rem;
+	left: 4.44rem;
+	width: 1.46rem;
+	height: auto;
+}
+.hty_cxBg .wzjp_front_4{
+	top: 2.1rem;
+	left: 4.44rem;
+	width: 1.25rem;
+	height: .58rem;
+}
+.hty_cxBg .wzjp_front_5{
+	top: .19rem;
+	left: 4.44rem;
+	width: .99rem;
+	height: .48rem;
+}
+.hty_cxBg .wzjp_behind_1{
+	top: .97rem;
+	left: .48rem;
+	width: 2.36rem;
+	height: .54rem;
+}
+.hty_cxBg .wzjp_behind_2{
+	top: 2.2rem;
+	left: .56rem;
+	width: 1.5rem;
+	height: .47rem;
+}
+.hty_cxBg .wzjp_behind_3{
+	top: 2.17rem;
+	left: 4.2rem;
+	width: 1.41rem;
+	height: .1rem;
+}
+.hty_cxBg .wzjp_behind_4{
+	top: 2.3rem;
+	left: 2.9rem;
+	width: 3.02rem;
+	height: .48rem;
+}
+.hty_cxBg .wzjp_behind_5{
+	top: 2.1rem;
+	left: 3.5rem;
+	width: .6rem;
+	height: .22rem;
+}
+.hty_cxBg .wzjp_behind_6{
+	top: .84rem;
+	left: 2.93rem;
+	width:2.70rem;
+	height: .39rem;
+}
+.hty_cxBg .wzjp_behind_7{
+	top: .28rem;
+	left: .9rem;
+	width:1.72rem;
+	height: .81rem;
+}
+.hty_cxBg #hty_ImgSrc{
+	width: 100%;
+	/*position: absolute;
+	left: 0;
+	bottom: 0;*/
+}
+.hty_imgD360Box,.hty_imgD180Box{
+	display: none;
+}
+.hty_cxBg a{
+	display: block;
+	position: absolute;
+	width: 4rem;
+	height: 2rem;
+	left: 50%;
+}
+.hty_cxBg .D0{
+	background: url(../images/D0.png) center no-repeat;
+	background-size: .29rem .28rem;
+	margin-left: -6.3rem;
+	margin-top: -2.5rem;
+}
+.hty_cxBg .D180{
+	background: url(../images/D180.png) center no-repeat;
+	background-size: .62rem .28rem;
+	margin-left: -2rem;
+	margin-top: -.8rem;
+}
+.hty_cxBg .D360{
+	background: url(../images/D360.png) center no-repeat;
+	background-size: .70rem .28rem;
+	margin-left: 2.9rem;
+	margin-top: -2.5rem;
+}
+
+.leftJtIcon{
+	display: block;
+	position: absolute;
+	background: url(../images/leftJtIcon.png) no-repeat;
+	background-size: .51rem 1.01rem;
+	width: .51rem;
+	height: 1.01rem;
+	left: 5%;
+	top: 50%;
+	margin-top: -.5rem;
+}
+.colorBox{
+	text-align: center;
+	margin: .2rem 0;
+	height: .5rem;
+	line-height: .5rem;
+	font-size: 13px;
+}
+.colorBox li{
+	display: inline-block;
+	width: .3rem;
+	height: .3rem;
+	line-height: .3rem;
+	cursor: pointer;
+	margin-left: .05rem;
+	margin-right: .05rem;
+	position: relative;
+}
+.colorBox li span{
+	position: relative;
+	bottom: -.4rem;
+	display: block;
+	width: 2rem;
+	font-size: 13px;
+	left: 50%;
+	margin-left: -1rem;
+	opacity: 0;
+}
+.colorBox .colorBox1{
+	background: url(../images/car-color.png) no-repeat;
+	background-size: .3rem .3rem;
+}
+.colorBox .colorBox2{
+	background: url(../images/car-color2.png) no-repeat;
+	background-size: .3rem .3rem;
+}
+.colorBox .colorBox3{
+	background: url(../images/car-color3.png) no-repeat;
+	background-size: .3rem .3rem;
+}
+.colorBox .colorBox4{
+	background: url(../images/car-color4.png) no-repeat;
+	background-size: .3rem .3rem;
+}
+.colorBox .colorBox5{
+	background: url(../images/car-color5.png) no-repeat;
+	background-size: .3rem .3rem;
+}
+.colorBox .colorBox6{
+	background: url(../images/car-color6.png) no-repeat;
+	background-size: .3rem .3rem;
+}
+.colorBox .colorBox7{
+	background: url(../images/car-color7.png) no-repeat;
+	background-size: .3rem .3rem;
+}
+.colorBox .active{
+	width: .4rem !important;
+	height: .4rem !important;
+	line-height: .4rem !important;
+	background-size: .4rem .4rem !important;
+}
+/*选择精品*/
+.hty_shopBox{
+	width: 13rem;
+	margin: 0 auto;
+	margin-top: 1.26rem;
+}
+.hty_shopBox .hty_shopTitle{
+	font-size: 13px;
+	height: 0.42rem;
+}
+.hty_shopBox .hty_shopTitle .hty_gtFont{
+	display: inline-block;
+	font-size: 0.28rem;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	border-right: 1px solid #999;
+	padding-right: 0.14rem;
+	margin-right: 0.18rem;
+}
+.hty_shopBox .hty_fontColor{
+	color: #EA4B35;
+	font-weight: bold;
+}
+.hty_shopBox .hty_fontColor .hty_money{
+	font-size: 0.3rem;
+	margin-right: 0.35rem;
+}
+/*产品列表*/
+.hty_cpList li{
+	width: 2.97rem;
+	height: 2.19rem;
+	overflow: hidden;	
+	float:left;
+	vertical-align: top;
+	margin-right: 0.26rem;
+	margin-top: 0.3rem;
+}
+.hty_cpList li:nth-child(4n){
+	margin-right: 0;
+}
+.hty_cpList li .hty_cpImgBox{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 1.81rem;
+}
+.hty_cpList li .hty_cpImgBox img{
+	width: 100%;
+	/*height: 100%;*/
+	position: absolute;
+	bottom: 0;
+}
+.hty_cpList li .hty_cpImgBox .hty_fuText{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0.35rem;
+	line-height: 0.35rem;
+	background: rgba(000,000,000,0.7);
+	color: #fff;
+	text-indent: 1em;
+	font-size: 13px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.hty_cpList li .hty_cpImgBox .hty_fuActive{
+	background: rgba(000,000,000,0.7) url(../images/dougouIcon.png)right 0.1rem center no-repeat;
+}
+.hty_cpList .hty_cpXq{
+	display: block;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	background: #FED700;
+	font-size: 13px;
+}
+.hty_allDg{
+	height: 0.57rem;
+	line-height: 0.57rem;
+	font-size: 13px;
+	color: #666666;
+	margin-top: 0.3rem;
+	margin-bottom: 1rem;
+}
+.hty_allDg a{
+	display: block;
+	width: 2.35rem;
+	height: 0.57rem;
+	text-align: center;
+	line-height: 0.57rem;
+	font-size: 0.24rem;
+	color: #fff;
+	background: #FAD401;
+	margin-right: 0.348rem;
+}
+.hty_allDg .btn_gray{background: #e3e3e3;}
+/*查看详情浮层*/
+.hty_ckxqFc{
+	position: fixed;
+	width: 9.96rem;
+	/*height: 6.31rem;*/
+	background: #fff;
+	padding: .2rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -3.5rem;
+	margin-left:-4.98rem;
+	z-index: 2000;
+	text-align: center;
+	display: none;
+}
+.hty_ckxqFc .hty_gtCpImg{
+	width: 9.96rem;
+	height: 4.51rem;
+	overflow: hidden;
+}
+.hty_ckxqFc .hty_gtCpImg img{
+	/*width: 100%;*/
+	height: 100%;
+}
+/*透明背景*/
+.hty_RgbaBg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(000,000,000,0.6);
+	z-index: 1000;
+	display: none;
+}
+.hty_geTitle{
+	height: .23rem;
+	line-height: .23rem;
+	margin-top: .25rem;
+	text-align: left;
+}
+.hty_geTitle>span{
+	display: inline-block;
+	width: 49%;
+}
+.hty_geTitle .hty_geName{
+	border-left: .03rem solid #FFD800;
+	font-size: .22rem;
+	text-indent: .5em;
+}
+.hty_geTitle .hty_rightText{
+	text-align: right;
+	font-size: 13px;
+}
+.hty_geTitle .hty_rightText .hty_gtImgMouey{
+	color: #EA4B35;
+	font-size: .22rem;
+	font-weight: bold;
+}
+.hty_gtCon{
+	font-size: 18px;
+	/*text-indent: .5em;*/
+	margin-top: .21rem;
+	text-align: left;
+	max-height: 0.8rem;
+	overflow: auto;
+	line-height: 1.8em;
+}
+.hty_ckxqFc a{
+	display: inline-block;
+	width: 2.08rem;
+	height: .52rem;
+	line-height: .52rem;
+	background: #FFD800;
+	border: #FFD800 1px solid;
+	font-size: .20rem;
+	margin: .30rem .10rem 0 .10rem;
+	transition: background-color .3s,border .3s,color .3s;
+}
+.hty_ckxqFc a:hover{
+	background: #fff;
+	border: #FFD800 1px solid;
+	color: #FFD800;
+}
+.hty_ckxqFc a.Off{
+	background: #999;
+	cursor: text;
+	border: #999 1px solid;
+}
+.hty_ckxqFc a.Off:hover{
+	background: #999;
+	border: #999 1px solid;
+	color: #333;
+}
+.hty_guanbBut{
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	font-size: .50rem;
+	right: -.60rem;
+	top: 0;
+	color: #C9C9C9;
+	transition: transform .5s;
+	background: url(../images/guanb_but.png) no-repeat;
+	background-size: 100% 100%;
+	width: 0.43rem;
+	height: 0.37rem;
+}
+.hty_guanbBut:hover{
+	transform: rotate(180deg);
+}
+#Nav{
+	text-align: right !important;
+}
+
+#Nav .secInput{
+	display: block !important;
+}
+#Nav li{
+	display: none !important;
+}
+#Nav .secBut{
+	display: none !important;
+}
+#Nav li.NoMarginR{
+	display: inline-block !important;
+}
+
+/*浮动按钮重置*/
+.fucMenuBox{
+	right: auto;
+	left: 0;
+}
+.fucMenuBox li>a{
+	height: 47px;
+	padding-top: 5px;
+	background: none !important;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+.fucMenuBox .hty_lastLi{
+	display: block !important;
+}
+.fucMenuBox li .fcShow{
+	right: auto;
+	left: -300px;
+}
+.fucMenuBox li>.TopBut {
+	background: url(../images/fxpIcon.png) center no-repeat !important;
+}
+#hty_ylbBox{
+	padding-bottom: 0.2rem;
+	display: none;
+}
+#hty_ylbBox h3{
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+#hty_ylbBox table{
+	width: 100%;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+#hty_ylbBox table th{
+	height: 40px;
+	border-right: 1px solid #999;
+	border-top: 1px solid #999;
+}
+#hty_ylbBox table td{
+	height: 30px;
+	border-right: 1px solid #999;
+	border-top: 1px solid #999;
+	padding-left:10px;
+	padding-right: 10px;
+}

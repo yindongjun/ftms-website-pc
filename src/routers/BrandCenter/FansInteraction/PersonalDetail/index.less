@@ -1,0 +1,400 @@
+.handlePersonalDetail {
+  margin: 0 auto 1rem;
+  max-width: 19.2rem;
+
+  .PersonalDetail {
+    margin: .86rem auto 0;
+    width: 14rem;
+    text-align: center;
+    padding-top: .79rem;
+  }
+
+  .personalInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .68rem 1.44rem;
+    border: .01rem solid rgba(0, 0, 0, .1);
+    border-top: .03rem solid #d3b078;
+    margin-bottom: 1.01rem;
+
+    .personalInfoLeft {
+      display: flex;
+      align-items: center;
+      padding-right: 2.36rem;
+      border-right: .01rem solid rgba(0, 0, 0, .1);
+
+      >img {
+        height: 1.64rem;
+        float: left;
+        margin-right: .42rem;
+      }
+
+      >div {
+        display: inline-block;
+        text-align: left;
+
+        h2 {
+          font-size: .3rem;
+          font-weight: 600;
+          margin-bottom: .27rem;
+
+          i {
+            display: inline-block;
+            font-size: 13px;
+            color: #999;
+            vertical-align: top;
+
+            &::before {
+              content: '';
+              display: inline-block;
+              vertical-align: middle;
+              transform: translateY(-50%);
+              height: 0.14rem;
+              width: 0.12rem;
+              margin: .1rem .05rem 0 .09rem;
+              margin-top: 0.1rem;
+              margin-right: .08rem;
+              background-image: url("../../../../assets/img/brandcenter/fansinteraction/location.png");
+              background-size: 100% 100%;
+            }
+          }
+        }
+
+        p {
+          font-size: 15px;
+          color: #000;
+        }
+      }
+    }
+
+    .personalInfoRight {
+      >div {
+        margin-bottom: .41rem;
+
+        >span {
+          font-size: .28rem;
+          color: #000;
+          display: inline-block;
+
+          i {
+            display: inline-block;
+            margin-left: .08rem;
+            font-size: .28rem;
+            font-weight: 500;
+            color: #d3b078;
+          }
+
+          &:first-of-type {
+            padding-right: .4rem;
+            border-right: .01rem solid rgba(0, 0, 0, .05);
+            margin-right: .39rem;
+          }
+        }
+      }
+
+      >button {
+        display: block;
+        border: .01rem solid #000;
+        outline: medium;
+        background-color: #fff;
+        height: 0.43rem;
+        line-height: .43rem;
+        width: 1.31rem;
+        text-align: center;
+        border-radius: .22rem;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0 auto;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          height: 0.16rem;
+          width: 0.16rem;
+          margin-top: 0.1rem;
+          margin-right: .08rem;
+          background-image: url("../../../../assets/img/brandcenter/fansinteraction/notice-icon.png");
+          background-size: 100% 100%;
+        }
+      }
+      > button:hover{
+        color: #fff;
+        background: #d3b078;
+        border: .01rem solid #d3b078;
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          height: 0.16rem;
+          width: 0.16rem;
+          margin-top: 0.1rem;
+          margin-right: .08rem;
+          background-image: url("../../../../assets/img/brandcenter/fansinteraction/notice-icon-w.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+
+  .PostsList {
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
+    // flex-wrap: wrap;
+    position: relative;
+    >a {
+      display: inline-block;
+      width: 6.92rem;
+      float:left;
+      >div {
+        // height: 3.42rem;
+        width: 6.92rem;
+        box-sizing: border-box;
+        box-shadow: rgba(51, 51, 51, .18) .0rem .01rem .5rem .01rem;
+        border-radius: .1rem;
+        padding: .28rem .3rem .33rem .31rem;
+        text-align: left;
+        margin-bottom: .28rem;
+
+        .ListHeader {
+          height: .43rem;
+          line-height: .43rem;
+
+          >a {
+            display: flex;
+            float: left;
+
+            >img {
+              height: 0.44rem;
+              display: inline-block;
+              margin-right: .1rem;
+            }
+
+            h1 {
+              display: inline-block;
+              font-size: 15px;
+              font-weight: 600;
+              margin-right: 1rem;
+            }
+          }
+
+          >i {
+            display: inline-block;
+            height: 0.3rem;
+            line-height: .3rem;
+            width: 0.9rem;
+            text-align: center;
+            background-color: #d3b078;
+            color: #fefefe;
+            font-size: 13px;
+            border-radius: .13rem;
+          }
+
+          >span {
+            float: right;
+            display: inline-block;
+            height: 0.43rem;
+            line-height: .43rem;
+            width: 1.31rem;
+            text-align: center;
+            border-radius: .22rem;
+            border: .01rem solid #000;
+            font-size: 13px;
+            font-weight: 600;
+
+            &::before {
+              content: '';
+              display: inline-block;
+              vertical-align: middle;
+              transform: translateY(-50%);
+              height: 0.16rem;
+              width: 0.16rem;
+              margin-top: 0.1rem;
+              margin-right: .08rem;
+              background-image: url("../../../../assets/img/brandcenter/fansinteraction/notice-icon.png");
+              background-size: 100% 100%;
+              font-size: 13px;
+            }
+          }
+        }
+
+        .activityTitle {
+          margin-top: .3rem;
+          display: block;
+          width: 100%;
+          text-align: left;
+          margin-bottom: .46rem;
+          font-size: .2rem;
+          min-height: .66rem;
+        }
+
+        .imgshow {
+          width: 100%;
+          height: 2.78rem;
+          margin-bottom: .21rem;
+          overflow: hidden;
+          .imgshow_1{
+            width:6.32rem;
+            display:block;
+          }
+          .imgshow_2{
+            width:3.12rem;
+            height:2.78rem;
+            float:left;
+            &:first-child{
+              margin-right:.07rem;
+            }
+          }
+          .imgshow_3{
+            &:first-child{
+              width:4rem;
+              height: 2.78rem;
+              float:left;
+              margin-right: .1rem;
+            }
+            &:nth-child(2){
+              width:2.21rem;
+              height:1.34rem;
+              float: left;
+              margin-bottom:.1rem;
+            }
+            &:nth-child(3){
+              width:2.21rem;
+              height:1.34rem;
+              float: left;
+            }
+          }
+        }
+
+        .ListBottomIcon {
+          span {
+            font-size: 13px;
+            color: #999;
+
+            &:first-of-type {
+              &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                transform: translateY(-50%);
+                height: 0.14rem;
+                width: 0.14rem;
+                margin-top: 0.1rem;
+                margin-right: .08rem;
+                background-image: url("../../../../assets/img/brandcenter/fansinteraction/date.png");
+                background-size: 100% 100%;
+              }
+            }
+
+            &:last-of-type {
+              float: right;
+
+              i {
+                display: inline-block;
+                margin-left: .1rem;
+
+                &::before {
+                  content: '';
+                  display: inline-block;
+                  vertical-align: middle;
+                  transform: translateY(-50%);
+                  height: 0.11rem;
+                  width: 0.17rem;
+                  margin-top: 0.08rem;
+                  margin-right: .05rem;
+                  background-image: url("../../../../assets/img/brandcenter/fansinteraction/eye.png");
+                  background-size: 100% 100%;
+                }
+
+                &:nth-of-type(2) {
+                  &::before {
+                    height: 0.14rem;
+                    width: 0.14rem;
+                    margin-top: 0.1rem;
+                    background-image: url("../../../../assets/img/brandcenter/fansinteraction/remark.png");
+                    background-size: 100% 100%;
+                  }
+                }
+
+                &:nth-of-type(3) {
+                  &::before {
+                    height: 0.12rem;
+                    width: 0.14rem;
+                    background-image: url("../../../../assets/img/brandcenter/fansinteraction/dotzan.png");
+                    background-size: 100% 100%;
+                  }
+                }
+
+                &:last-of-type {
+                  &::before {
+                    height: 0.15rem;
+                    width: 0.13rem;
+                    background-image: url("../../../../assets/img/brandcenter/fansinteraction/share.png");
+                    background-size: 100% 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(2n) {
+        // margin-left: .14rem;
+      }
+      &:first-child{
+        margin-right:10px;
+      }
+    }
+  }
+  .watchmore {
+    display: block;
+    font-size: 13px;
+    color: #999;
+    margin-top: .32rem;
+    cursor: pointer;
+    &::after {
+      content: '';
+      display: block;
+      vertical-align: middle;
+      transform: translateY(-50%);
+      height: 0.12rem;
+      width: 0.13rem;
+      margin: .15rem auto;
+      background-image: url("../../../../assets/img/brandcenter//newscenter/moreicon.png");
+      background-size: 100% 100%;
+    }
+  }
+  // .watchmore {
+  //   display: block;
+  //   height: 0.43rem;
+  //   line-height: .43rem;
+  //   width: 1.31rem;
+  //   text-align: center;
+  //   border: .01rem solid #000;
+  //   border-radius: .22rem;
+  //   font-size: 13px;
+  //   margin: .32rem auto .15rem;
+  //   color: #000;
+  //   cursor: pointer;
+
+  //   &::before {
+  //     content: '';
+  //     display: inline-block;
+  //     vertical-align: middle;
+  //     transform: translateY(-50%);
+  //     height: 0.15rem;
+  //     width: 0.12rem;
+  //     margin-top: 0.1rem;
+  //     margin-right: .08rem;
+  //     background-image: url("../../../../assets/img/brandcenter/fansinteraction/watchmore.png");
+  //     background-size: 100% 100%;
+  //   }
+  // }
+}

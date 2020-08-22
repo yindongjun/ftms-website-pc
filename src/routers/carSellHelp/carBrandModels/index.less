@@ -1,0 +1,345 @@
+.carBrandModels {
+  margin: 0 auto 1rem;
+  .carModels {
+    max-width: 19.2rem;
+    margin-top: .86rem;
+    .bigTitle {
+      height: 1.24rem;
+      border-bottom: 0.01rem solid rgb(214, 214, 214);
+      font-size: 0.3rem;
+      color: #000;
+      text-align: center;
+      line-height: 1.24rem;
+      font-weight: 700;
+      position: fixed;
+      top: 0.86rem;
+      left: 2.1rem;
+      width: 15rem;
+      background: #fff;
+      z-index: 10;
+      transition: all 0.5s;
+    }
+    .none{
+      display: none;
+    }
+    .checkAnchor {
+      height: 1rem;
+      // border-bottom: 0.01rem solid rgb(214, 214, 214);
+      padding-top: 0.59rem;
+      position: fixed;
+      top: 2.1rem;
+      left: 2.1rem;
+      width: 15rem;
+      background: #fff;
+      z-index: 10;
+      transition: all 0.5s;
+      > a {
+        display: inline-block;
+        height: 0.5rem;
+        width: 2.64rem;
+        border: 0.01rem solid rgb(214, 214, 214);
+        border-radius: 0.25rem;
+        font-size: 13px;
+        text-align: center;
+        line-height: 0.5rem;
+        color: #000;
+        margin-left: 0.15rem;
+      }
+      > a:hover {
+        color: #fff;
+        background: #D3B078;
+      }
+      > .checkAnchor_active {
+        display: inline-block;
+        height: 0.5rem;
+        width: 2.64rem;
+        border: 0.01rem solid rgb(214, 214, 214);
+        border-radius: 0.25rem;
+        font-size: 13px;
+        text-align: center;
+        line-height: 0.5rem;
+        margin-left: 0.15rem;
+        color: #fff;
+        background: #D3B078;
+        text-decoration: none;
+      }
+      > .yuanzhuangjinkouBox {
+        color: #000;
+        > span {
+          display: none;
+        }
+      }
+      > .yuanzhuangjinkouBox:hover {
+        > i {
+          display: none;
+        }
+        > span {
+          color: #fff;
+          display: inline;
+        }
+      }
+      > .yuanzhuangjinkouBox:link{
+        text-decoration: none;
+      }
+    }
+    .fixed{
+      position: fixed;
+      top: 0.8rem;
+      padding-top: 0.2rem;
+      background-color: #fff;
+    }
+    > a:hover{
+      color: #000;
+    }
+    .jiaoche {
+      display: block;
+      height: 0.87rem;
+      border-bottom: 0.01rem solid rgb(214, 214, 214);
+      border-top: 0.01rem solid rgb(214, 214, 214);
+      font-size: 0.28rem;
+      text-align: center;
+      line-height: 0.87rem;
+      margin-left: 2.6rem;
+      margin-right: 2.6rem;
+      margin-top: 3rem;
+    }
+    .SUV {
+      display: block;
+      height: 0.87rem;
+      border-bottom: 0.01rem solid rgb(214, 214, 214);
+      border-top: 0.01rem solid rgb(214, 214, 214);
+      font-size: 0.28rem;
+      text-align: center;
+      line-height: 0.87rem;
+      margin-left: 2.6rem;
+      margin-right: 2.6rem;
+    }
+    .keche {
+      display: block;
+      height: 0.87rem;
+      border-top: 0.01rem solid rgb(214, 214, 214);
+      border-bottom: 0.01rem solid rgb(214, 214, 214);
+      font-size: 0.28rem;
+      text-align: center;
+      line-height: 0.87rem;
+      margin-left: 2.6rem;
+      margin-right: 2.6rem;
+    }
+    .jiaocheList {
+      // background: green;
+      min-height: 5rem;
+      padding: 0.6rem 2.4rem 0 2.4rem;
+      .itemMask{
+        display: inline-block;
+        width: 3.4rem;
+        height: 4.4rem;
+        margin-right: 0.5rem;
+        margin-top: -0.2rem;
+        .listItem {
+          width: 3.6rem;
+          height: 3.8rem;
+          border-radius: 0.05rem;
+          position: relative;
+          padding: 0.54rem 0.33rem 0 0.33rem;
+          .carMark_new {
+            display: block;
+            height: 0.33rem;
+            width: 0.36rem;
+            background-image: url('../../../assets/img/carBrandModels/new.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 0.2rem;
+            left: 0.2rem;
+          }
+          .carMark_attr {
+            display: block;
+            height: 0.33rem;
+            width: 0.47rem;
+            background-image: url('../../../assets/img/carBrandModels/threeD.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 0.2rem;
+            right: 0.2rem;
+            cursor: pointer;
+            z-index: 9;
+          }
+          > img {
+            cursor: pointer;
+            display: block;
+            max-width: 98%;
+            margin: 0 auto;
+          }
+          > h3 {
+            cursor: pointer;
+            font-size: 0.2rem;
+            font-weight: 700;
+            color: #000;
+            text-align: center;
+            line-height: 0.76rem;
+            height: 0.76rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          > p {
+            font-size: 13px;
+            height: 0.4rem;
+            text-align: center;
+            line-height: 0.4rem;
+            color: rgba(0, 0, 0, 0.7);
+            border-top: 0.01rem solid rgba(214, 214, 214, 0.8);
+            border-bottom: 0.01rem solid rgba(214, 214, 214, 0.8);
+            margin-bottom: 0.3rem;
+          }
+          > .detailBtn {
+            cursor: pointer;
+            display: inline-block;
+            height: 0.43rem;
+            width: 1.3rem;
+            border: 0.01rem solid #000;
+            border-radius: 0.265rem;
+            font-size: 13px;
+            line-height: 0.43rem;
+            font-weight: 700;
+            text-align: center;
+            margin-right: 0.32rem;
+            > em {
+              display: inline-block;
+              width: 0.14rem;
+              height: 0.14rem;
+              background-image: url('../../../assets/img/carBrandModels/查看详情拷贝2的副本.png');
+              background-repeat: no-repeat;
+              background-size: 100%;
+              vertical-align: middle;
+            }
+          }
+          > .detailBtn:hover{
+            color: #fff;
+            background: #D3B078;
+            border: 0.01rem solid transparent;
+            > em {
+              background-image: url('../../../assets/img/carBrandModels/查看详情-白.png');
+            }
+          }
+          > .joinVSBtn {
+            display: inline-block;
+            height: 0.43rem;
+            width: 1.3rem;
+            border: 0.01rem solid #000;
+            border-radius: 0.265rem;
+            font-size: 13px;
+            line-height: 0.43rem;
+            font-weight: 700;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            > em {
+              display: inline-block;
+              width: 0.14rem;
+              height: 0.14rem;
+              background-image: url('../../../assets/img/carBrandModels/加入对比的副本.png');
+              background-repeat: no-repeat;
+              background-size: 100%;
+              vertical-align: middle;
+            }
+            > .vsInfoBox {
+              display: none;
+              width: 4.7rem;
+              height: 2.2rem;
+              background: #fff;
+              position: absolute;
+              //top: 0.6rem;
+              top: 0.85rem;
+              left: -2.35rem;
+              z-index: 11;
+              box-shadow: 0.01rem 0.01rem 0.1rem rgba(0,0,0,0.3);
+              > i {
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 0.1rem solid transparent;
+                border-right: 0.2rem solid transparent;
+                border-bottom: 0.1rem solid #fff;
+                border-left: 0.2rem solid transparent;
+                position: absolute;
+                //top: 0;
+                top: -0.2rem;
+                right: 1.4rem;
+              }
+              > .vsInfoList {
+                height: 1.8rem;
+                padding: 0 0.15rem;
+                overflow: auto;
+                > li {
+                  height: 0.6rem;
+                  border-bottom: 0.01rem solid rgb(214, 214, 214);
+                  > i {
+                    // background-image: url('../../assets/img/carBrandModels/加入对比的副本.png');
+                    // background-repeat: no-repeat;
+                    // background-size: 100%;
+                    display: inline-block;
+                    height: 0.2rem;
+                    width: 0.2rem;
+                    background: #D3B078;
+                    float: left;
+                    margin-top: 0.2rem;
+                    border-radius: 0.1rem;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 0.18rem;
+                    font-size: 0.2rem;
+                  }
+                  > span {
+                    font-size: 13px;
+                    line-height: 0.6rem;
+                    float: left;
+                    width: 2.5rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    text-align: left;
+                  }
+                  > strong {
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: #D3B078;
+                    line-height: 0.6rem;
+                    float: right;
+                  }
+                }
+              }
+              > .vsInfoList::-webkit-scrollbar {
+                width: 6px; //滚动条的宽度
+              }
+              > .vsInfoList::-webkit-scrollbar-thumb {
+                  background-color: burlywood;//滚动条的颜色
+                  border-radius: 3px;//滚动条的边框倒角
+              }
+              > h5 {
+                font-size: 13px;
+                color: #A0A0A0;
+                height: 0.4rem;
+                border-top: 0.01rem solid rgb(214, 214, 214);
+              }
+            }
+          }
+          > .joinVSBtn:hover{
+            color: #fff;
+            background: #D3B078;
+            border: none;
+            > em{
+              background-image: url('../../../assets/img/carBrandModels/contrastW.png');
+            }
+          }
+        }
+      }
+      .listItem:hover {
+        box-shadow: 1px 2px 40px 4px rgba(214, 214, 214, 0.8);
+        transition: all 0.5s;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,502 @@
+.vs {
+  margin: 0 auto 1rem;
+  max-width: 19.2rem;
+  margin-top: .86rem;
+  padding: 0 2.6rem;
+  > h2 {
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    border-bottom: 0.01rem solid rgb(214, 214, 214);
+    font-size: 0.3rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+  }
+  > .vsCarlist {
+    height: 2.47rem;
+    width: 14rem;
+    overflow: hidden;
+    border: 0.01rem solid rgb(214, 214, 214);
+    position: relative;
+    transition: position 1s;
+    display: flex;
+    > span {
+      position: absolute;
+      top: -0.3rem;
+      display: inline-block;
+      height: 0.2rem;
+      //width: 0.6rem;
+      font-size: 13px;
+      line-height: 0.2rem;
+      > i {
+        display: inline-block;
+        height: 0.12rem;
+        width: 0.12rem;
+        border-radius: 0.06rem;
+        background: burlywood;
+        margin-right: .11rem;
+      }
+    }
+    > .biaopei {
+      right: 2rem;
+    }
+    > .xuanpei {
+      right: 1rem;
+      > i {
+        background: #fff;
+        border: 0.01rem solid burlywood;
+      }
+    }
+    > .nothing {
+      right: 0.2rem;
+      > i {
+        display: inline-block;
+        height: 0.03rem;
+        width: 0.12rem;
+        //border-radius: none;
+        background: #000;
+        vertical-align: 0.04rem;
+      }
+    }
+    > div { 
+      float: left;
+      // width: 3.04rem;
+      height: 2.45rem;
+      border-right: 0.01rem solid rgb(214, 214, 214);
+      text-align: center;
+      font-size: 0.2rem;
+      font-weight: 700;
+      flex: 1;
+    }
+    > .title {
+      width: 1.81rem;
+      font-size: 15px;
+      line-height: 2.45rem;
+    }
+    > .carModel {
+      // padding-top: 0.3rem;
+      height: 2.45rem;
+      position: relative;
+      .carModelTit{
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      b {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 0.34rem;
+        width: 0.34rem;
+        background-image: url(../../../assets/img/carSellHelp/vsCarPage/关闭.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      img {
+        margin-bottom: 0.15rem;
+      }
+      p {
+        margin-bottom: 0.15rem;
+        color: #b5b5b5;
+        font-weight: normal;
+      }
+      .ant-select {
+        width: 2.5rem;
+        > .ant-select-selection {
+          box-shadow: none;
+          border-radius: 0.2rem;
+          font-weight: normal;
+          color: #b5b5b5;
+        }
+        > .ant-select-selection:hover {
+          border-color: burlywood;
+        }
+        .ant-select-selection:focus {
+          border-color: burlywood;
+        }
+      }
+      .ant-select-open {
+        border-color: burlywood;
+        .ant-select-selection {
+          border-color: burlywood;
+        }
+      }
+      .unCheck {
+        // width: 2.5rem;
+        .ant-select-selection {
+          .ant-select-selection-selected-value {
+            color: #ee0000;
+          }
+        }
+      }
+      strong {
+        width: 0.67rem;
+        height: 0.9rem;
+        display: block;
+        background-image: url(../../../assets/img/carSellHelp/vsCarPage/添加.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 0.2rem;
+        margin: 0 auto;
+        margin-bottom: 0.15rem;
+        cursor: pointer;
+      }
+      i {
+        display: block;
+        margin-bottom: 0.15rem;
+        font-weight: normal;
+        font-size: 13px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    > .carModel:hover  b {
+      display: block;
+      cursor: pointer;
+    }
+    .carModel:last-child{
+      border-right: none;
+    }
+  }
+  .carListFixToTop{
+    background-color: #fff;
+    position: fixed;
+    top: 0.8rem;
+    z-index: 9;
+    transition: position 2s;
+  }
+  > .ant-collapse {
+    width: 14rem;
+    > .ant-collapse-item {
+      background: burlywood;
+      > .ant-collapse-header {
+        color: #fff;
+        line-height: 0.2rem;
+        height: 0.4rem;
+        padding: 0.12rem 0 0.12rem 0.4rem;
+        font-weight: 700;
+        > i {
+          right: 15px;
+          > svg {
+            float: right;
+          }
+        }
+      }
+      > .ant-collapse-content {
+        > .ant-collapse-content-box {
+          padding: 0;
+          > ul {
+            min-height: 0.5rem;
+            overflow: auto;
+            > li {
+              font-size: 13px;
+              line-height: 0.4rem;
+              text-align: center;
+              border-bottom: 0.01rem solid rgb(214, 214, 214);
+              display: flex;
+              > span {
+                &:first-of-type {
+                  justify-content: flex-end;
+                  text-align: right;
+                }
+                display: flex;
+                width: 3.04rem;
+                border-right: 0.01rem solid rgb(214, 214, 214);
+                align-items: center;
+                // justify-content: flex-start;
+                text-align: left;
+                overflow: hidden;
+                word-break: break-all;
+                padding: 0 0.1rem;
+                // 圆点
+                > i {
+                  display: inline-block;
+                  width: 0.1rem;
+                  height: 0.1rem;
+                  background: rgb(207, 170, 117);
+                  border-radius: 0.05rem;
+                }
+                // 横线
+                > em {
+                  display: inline-block;
+                  width: 0.1rem;
+                  height: 0.015rem;
+                  background: rgb(207, 170, 117);
+                }
+              }
+            }
+            > .littleTitle {
+              background: rgb(207, 170, 117);
+              font-weight: 700;
+              color: #fff;
+              > a {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.joinCarModal {
+  > .ant-modal-content {
+    width: 12rem;
+    height: 6rem;
+    left: -2.5rem;
+    > .ant-modal-close {
+      position: absolute;
+      top: -0.15rem;
+      right: -0.15rem;
+      > .ant-modal-close-x{
+        background: rgb(211, 176, 120);
+        border-radius: 0.13rem;
+        width: 0.26rem;
+        height: 0.26rem;
+        color: #fff;
+        line-height: 0.28rem;
+      }
+    }
+    > .ant-modal-body {
+      padding: 0;
+      position: relative;
+      > .title {
+        height: 1.05rem;
+        border: 0.01rem solid rgb(214, 214, 214);
+        padding: 0.25rem 0 0 1.5rem;
+        > span {
+          display: inline-block;
+          height: 0.44rem;
+          width: 2.05rem;
+          font-size: 13px;
+          font-weight: 700;
+          border-radius: 0.22rem;
+          text-align: center;
+          line-height: 0.44rem;
+          border: 0.01rem solid rgb(214, 214, 214);
+          margin-right: 0.15rem;
+          cursor: pointer;
+        }
+        > .span_active {
+          background: burlywood;
+          color: #fff;
+          border: none;
+        }
+      }
+      > .bannerBox {
+        height: 3.95rem;
+        border-bottom: 0.01rem solid rgb(214, 214, 214);
+        position: relative;
+        padding: 0 0.6rem;
+        overflow: hidden;
+        > span {
+          display: block;
+          position: absolute;
+          top: 45%;
+          height: 0.3rem;
+          width: 0.15rem;
+          font-size: 0.3rem;
+          line-height: 0.3rem;
+          color: #b5b5b5;
+          cursor: pointer;
+          z-index: 99;
+        }
+        > .preBtn {
+          cursor: pointer;
+          left: 2%;
+          background-image: url(../../../assets/img/carSellHelp/vsCarPage/zuohei.jpg);
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+        > .nextBtn {
+          cursor: pointer;
+          right: 2%;
+          background-image: url(../../../assets/img/carSellHelp/vsCarPage/youhei.jpg);
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+        > .preBtn:hover {
+          background-image: url(../../../assets/img/carSellHelp/vsCarPage/zuohuang.jpg);
+        }
+        > .nextBtn:hover {
+          background-image: url(../../../assets/img/carSellHelp/vsCarPage/youhuang.jpg);
+        }
+        > ul {
+          height: 100%;
+          padding-top: 0.35rem;
+          width: 30rem;
+          position: absolute;
+          top: 0;
+          left: 0.5rem;
+          transition: 0.3s;
+          > li {
+            cursor: pointer;
+            float: left;
+            width: 3.4rem;
+            height: 3.2rem;
+            padding: 0.2rem 0 0 0.2rem;
+            position: relative;
+            > i {
+              display: block;
+              width: 0.36rem;
+              height: 0.33rem;
+              background-image: url('../../../assets/img/carBrandModels/new.png');
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              top: 0.2rem;
+              left: 0.35rem;
+            }
+            > b {
+              display: block;
+              width: 0.36rem;
+              height: 0.33rem;
+              background-image: url('../../../assets/img/carBrandModels/threeD.png');
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              top: 0.2rem;
+              right: 0.35rem;
+            }
+            > strong {
+              display: none;
+              width: 0.2rem;
+              height: 0.2rem;
+              border-radius: 0.02rem;
+              background-image: url('../../../assets/img/carSellHelp/downloadCenter/未选中的副本.png');
+              background-repeat: no-repeat;
+              background-size: 100%;
+              vertical-align: -0.05rem;
+              position: absolute;
+              top: 0.2rem;
+              left: 0.35rem;
+              cursor: pointer;
+            }
+            > .strong_active {
+              background-image: url('../../../assets/img/carSellHelp/downloadCenter/选中的副本.png');
+              display: block;
+            }
+            > img {
+              margin: 0.4rem 0.15rem 0.37rem 0.55rem
+            }
+            > h5 {
+              font-size: 0.2rem;
+              font-weight: 700;
+              text-align: center;
+              margin: 0 0.35rem 0.17rem 0.15rem;
+            }
+            > p {
+              font-size: 15px;
+              color: rgb(214, 214, 214);
+              border-top: 0.01rem solid rgb(214, 214, 214);
+              border-bottom: 0.01rem solid rgb(214, 214, 214);
+              margin: 0 0.35rem 0.17rem 0.15rem;
+              text-align: center;
+            }
+          }
+          > li:hover {
+            box-shadow: 0.01rem 0.02rem 0.1rem 0.01rem rgba(214, 214, 214, 0.5)
+          }
+          > li:hover >strong {
+            display: block;
+          }
+          > li:hover >i {
+            display: none;
+          }
+          > li:hover >b {
+            display: none;
+          }
+        }
+      }
+      > p {
+        height: 0.3rem;
+        width: 8rem;
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0.5rem;
+        > span {
+          display: inline-block;
+          padding-left: 0.03rem;
+          width: 2rem;
+          height: 0.3rem;
+          margin-right: 0.1rem;
+          border: 0.01rem solid rgb(214, 214, 214);
+          font-size: 13px;
+          line-height: 0.3rem;
+          vertical-align: -0.08rem;
+          padding-left: 0.15rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          > i {
+            color: rgb(214, 214, 214);
+            cursor: pointer;
+          }
+        }
+      }
+      > .joinItBtn {
+        height: 0.4rem;
+        width: 1.3rem;
+        border-radius: 0.2rem;
+        text-align: center;
+        color: #fff;
+        background: burlywood;
+        font-size: 0.2rem;
+        line-height: 0.4rem;
+        position: absolute;
+        bottom: -0.7rem;
+        right: 2.5rem;
+        cursor: pointer;
+        > span {
+          display: inline-block;
+          height: 0.16rem;
+          width: 0.16rem;
+          vertical-align: -0.03rem;
+          background-image: url('../../../assets/img/carBrandModels/contrastW.png');
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+      }
+      > .closeBtn {
+        height: 0.4rem;
+        width: 1.3rem;
+        border: 0.01rem solid #000;
+        border-radius: 0.2rem;
+        text-align: center;
+        font-size: 0.2rem;
+        line-height: 0.4rem;
+        position: absolute;
+        bottom: -0.7rem;
+        right: 0.7rem;
+        cursor: pointer;
+        > span {
+          display: inline-block;
+          height: 0.16rem;
+          width: 0.16rem;
+          border-radius: 0.08rem;
+          font-size: 0.12rem;
+          border: 0.01rem solid #000;
+          text-align: center;
+          line-height: 0.16rem;
+          vertical-align: 0.03rem;
+        }
+      }
+    }
+  }
+}
+
+// select 下拉框子选项 样式 可能会影响全局该样式 但此样式 是统一风格的 影响全局是允许覆盖的
+.ant-select-dropdown {
+  .ant-select-dropdown-menu-item-active {
+    background-color: rgba(207, 170, 117, 0.5);
+  }
+}
+.ant-select {
+  .ant-select-selection:focus {
+    border-color: burlywood;
+  }
+}

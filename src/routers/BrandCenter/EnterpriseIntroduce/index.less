@@ -1,0 +1,101 @@
+.handleEnterPriseIntroduce {
+  margin: 0 auto 1rem;
+  .EnterPriseIntroduce {
+    max-width: 19.2rem;
+    margin-top: .8rem;
+    .topBanner{
+      position: relative;
+      .headImg {
+        display: block;
+        width: 100%;
+      }
+      .tit{
+        position: absolute;
+        top: 40%;
+        left: 13.5%;
+        font-size: .36rem;
+        letter-spacing: 2.5px;
+        font-weight: 600;
+        color: #fff;
+      }
+      .underLine{
+        position: absolute;
+        top: 61%;
+        left: 13.5%;
+        display: inline-block;
+        width: 0.36rem;
+        height: 0.03rem;
+        background-color: #fff;
+      }
+    }
+    .ant-tabs {
+      width: 100%;
+      .ant-tabs-bar {
+        border: none;
+        margin: 0;
+        width: 100%;
+        .ant-tabs-nav {
+          width: 100%;
+          .ant-tabs-tab {
+            margin: 0;
+            padding: 0;
+            height: 0.8rem;
+            line-height: .8rem;
+            width: 33.34%;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            background-color: #f0f0f0;
+            border-right: .01rem solid #fff;
+            &:last-of-type {
+              border: none;
+            }
+            &:hover {
+              color: #fff;
+              background: #d3b078;
+            }
+          }
+          .ant-tabs-tab-active {
+            color: #fff;
+            background-color: #d3b078;
+            &:hover {
+              color: #fff;
+            }
+          }
+          .ant-tabs-ink-bar-animated {
+            display: none!important;
+            width: 0;
+          }
+        }
+      }
+      .ant-tabs-top-content {
+        width: 100%;
+        padding: .8rem 0 0;
+        transition: none;
+      }
+    }
+    .joinus {
+      position: fixed;
+      height: 1.12rem;
+      width: 1.12rem;
+      background-color: #d3b078;
+      border-top-left-radius: .1rem;
+      border-bottom-left-radius: .1rem;
+      right: 0;
+      bottom: 27%;//bottom: 35.3%;
+      padding-top: .25rem;
+      text-align: center;
+      >img {
+        height: 0.28rem;
+        display: block;
+        margin: 0 auto .12rem;
+      }
+      >a {
+        display: block;
+        color: #fff;
+        font-size: 13px;
+      }
+    }
+  }
+}

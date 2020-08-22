@@ -1,0 +1,113 @@
+.handleAroundMag {
+  margin: .8rem auto 0;
+  width: 14rem;
+  h2 {
+    font-size: .24rem;
+    font-weight: 600;
+    padding-bottom: .4rem;
+    border-bottom: .01rem solid rgba(51, 51, 51, .18);
+    margin-bottom: .6rem;
+  }
+  .MagnizationNav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      height: 2.52rem;
+      margin-bottom: .79rem;
+      img {
+        width: 2.1rem;
+        height:2.5rem;
+        height: 100%;
+        display: inline-block;
+        border:1px solid rgba(51, 51, 51, .18);
+        margin-right: .32rem;
+      }
+      >div {
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        position: relative;
+        width:1.8rem;
+        h1 {
+          font-size: 15px;
+          font-weight: 600;
+          color: #1a1a1a;
+          width:1.5rem;
+        }
+        i {
+          font-size: 13px;
+          color: #666;
+          display: block;
+          position: absolute;
+          left:0;
+          bottom:.8rem;
+        }
+        span {
+          display: block;
+          height: .43rem;
+          line-height: .43rem;
+          width: 1.31rem;
+          text-align: center;
+          border: .01rem solid #000;
+          border-radius: .22rem;
+          margin-top: .3rem;
+          font-size: 13px;
+          font-weight: 600;
+          position: absolute;
+          left:0;
+          bottom:0;
+          &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            height: 0.18rem;
+            width: 0.18rem;
+            margin-top: 0.155rem;
+            margin-right: .08rem;
+            background-image: url("../../../../assets/img/serviceIntroduce/readicon.png");
+            background-size: 100% 100%;
+          }
+          &:hover {
+            a{
+              color: #fff;
+            }
+            border: none;
+            background-color: #d3b078;
+            color: #fff;
+            &::before {
+              background-image: url("../../../../assets/img/serviceIntroduce/readiconw.png");
+              background-size: 100% 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .lookingMore {
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    .anticon {
+      display: block;
+      margin-top: .05rem;
+    }
+  }
+  .fiximg{
+    position: fixed;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-top-left-radius: .1rem;
+    border-bottom-left-radius: .1rem;
+    right: 0;
+    bottom: 24.5%;//bottom: 35.3%;
+    box-shadow: 0 0 0.1rem 0.05rem #F3F3F3;
+    overflow: hidden;
+    >img{
+      width:100%;
+      height:100%;
+    }
+  }
+}

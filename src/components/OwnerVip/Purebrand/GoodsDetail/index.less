@@ -1,0 +1,205 @@
+.handleGoodsDetail {
+  width: 100%;
+  max-width: 19.2rem;
+  margin: 0 auto;
+  padding: 0 3.64rem 0 3.61rem;
+  text-align: center;
+  .goodstitle {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    h2 {
+      font-size: .3rem;
+      font-weight: 600;
+      color: #000;
+      width: 100%;
+      padding-bottom: .4rem;
+      border-bottom: .01rem solid rgba(51, 51, 51, .18);
+    }
+    a {
+      position: absolute;
+      left: 0;
+      font-size: 15px;
+      font-weight: 600;
+      top: .12rem;
+      color: #d3b078;
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateY(-50%);
+        position: relative;
+        top: .12rem;
+        left: 0;
+        height: 0.28rem;
+        width: 0.28rem;
+        background-image: url("../../../../assets/img/purebrand/return.png");
+        background-size: 100% 100%;
+        margin-right: .05rem;
+      }
+    }
+  }
+  .GoodsDetailList {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: .58rem;
+    li {
+      float: left;
+      width: 3.47rem;
+      margin-bottom: .65rem;
+      border-radius: .08rem;
+      transition: all .5s;
+      margin-right:.75rem;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, .09);
+      border-radius: .05rem;
+      overflow: hidden;
+      &:nth-child(3n){
+            margin-right: 0;
+          }
+      .imgdesc {
+        width: 100%;
+        height:2rem;
+        display: block;
+        margin-bottom: .15rem;
+      }
+      .wordnote {
+        width: 100%;
+        padding-left: .3rem;
+        text-align: left;
+        margin-bottom: .2rem;
+        img{
+          display: block;
+          width:.74rem;
+          height:.21rem;
+        }
+        h2 {
+          font-size: .2rem;
+          font-weight: 600;
+        }
+      }
+      button {
+        display: inline-block;
+        height: 0.43rem;
+        line-height: .43rem;
+        text-align: center;
+        width: 1.3rem;
+        border: .01rem solid #000;
+        border-radius: .22rem;
+        font-size: 13px;
+        margin-bottom: .23rem;
+        span {
+          &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            height: 0.16rem;
+            width: 0.16rem;
+            margin-top: .13rem;
+            background-image: url("../../../../assets/img/purebrand/switchB.png");
+            background-size: 100% 100%;
+            margin-right: .05rem;
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, .09);
+        button {
+          border: none;
+          background-color: #d3b078;
+          span {
+            color: #fff;
+            &::before {
+              background-image: url("../../../../assets/img/purebrand/white.png");
+              background-size: 100% 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.ant-modal-wrap {
+  .goodsdetail {
+    width: 9rem!important;
+    .ant-modal-content {
+      .ant-modal-close {
+        top: -.1rem;
+        right: -.1rem;
+        .ant-modal-close-x {
+          height: 0.3rem;
+          line-height: .3rem;
+          font-size: 13px;
+          width: 0.3rem;
+          text-align: center;
+          border-radius: 50%;
+          background-color: #d3b078;
+          color: #fff;
+        }
+      }
+      .ant-modal-body {
+        padding: 0;
+        >img {
+          width: 100%;
+          display: block;
+        }
+        ul{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          li{
+            width:2.13rem;
+            height:1.33rem;
+            margin-right:.1rem;
+            img{
+              display: block;
+              width:100%;
+              height:100%;
+              margin-top:.1rem;
+            }
+            &:last-child{
+              margin-right:0;
+            }
+          }
+
+        }
+        h2 {
+          width: 100%;
+          font-size: .24rem;
+          font-weight: 600;
+          padding-left: .4rem;
+          padding-top:.4rem;
+          margin-bottom: .2rem;
+        }
+        >div {
+          padding-bottom: .37rem;
+          p {
+            width: 100%;
+            padding-left: .39rem;
+            font-size: 13px;
+            color: #000;
+            //  &:nth-last-of-type(2),
+            //  &:last-of-type {
+            //    &::before {
+            //      content: '';
+            //      display: inline-block;
+            //      vertical-align: middle;
+            //      transform: translateY(-50%);
+            //      height: 0.1rem;
+            //      width: 0.1rem;
+            //      border-radius: 50%;
+            //      border: .01rem solid rgba(51, 51, 51, .18);
+            //      margin-top: .05rem;
+            //      margin-right: .05rem;
+            //    }
+            //  }
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,266 @@
+.handleProtectCourse {
+  background: #f6f6f6;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: -.96rem;
+  h2 {
+    margin: 0 auto;
+    width: 14rem;
+    font-size: .3rem;
+    color: #000;
+    font-weight: 600;
+    padding-bottom: .4rem;
+    padding-top: .8rem;
+    border-bottom: .01rem solid rgba(51, 51, 51, .18);
+    margin-bottom: .3rem;
+  }
+  .video h2 {
+    padding-top: .8rem;
+  }
+  .articalList {
+    margin: 0 auto;
+    width: 14rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: .6rem;
+    a{
+      text-decoration:none;
+      &:nth-child(3n) {
+        li {
+          margin-right: 0;
+        }
+      }
+    }
+    li {
+      width: 4.37rem;
+      height: 1.54rem;
+      transition: all .5s;
+      // padding-left: .4rem;
+      text-align: left;
+      position: relative;
+      border-bottom: .01rem solid #e5e5e5;
+      margin-right: .44rem;
+      padding-top: .3rem;
+      padding-bottom: .3rem;
+      h1 {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: .08rem;
+      }
+      span {
+        display: block;
+        font-size: 13px;
+        color: #999;
+        i {
+          // margin-left: .1rem;
+          &::before{
+            content: '';
+              display: inline-block;
+              vertical-align: middle;
+              transform: translateY(-50%);
+              height: 0.14rem;
+              width: 0.14rem;
+              margin-top: 0.1rem;
+              margin-right: .05rem;
+              background-image: url("../../../../../assets/img/serviceIntroduce/date.png");
+              background-size: 100% 100%;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        top: .3rem;
+        right: .1rem;
+        display: block;
+        float: right;
+        width: 1.6rem;
+        height: .94rem;
+        margin-bottom: .3rem;
+      }
+      &:hover {
+        box-shadow: rgba(51,51,51,.18) 0.01rem 0.01rem 0.5rem 0.01rem;
+        padding-left: .2rem;
+        h1 {
+          color: #d3b078;
+        }
+      }
+    }
+  }
+
+
+  
+  .watchmore {
+    display: block;
+    width: 14rem;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    margin: .61rem auto 1rem;
+    cursor: pointer;
+    &::after {
+      content: '';
+      display: block;
+      vertical-align: middle;
+      transform: translateY(-50%);
+      height: 0.12rem;
+      width: 0.13rem;
+      margin: .15rem auto;
+      background-image: url("../../../../../assets/img/brandcenter/newscenter/moreicon.png");
+      background-size: 100% 100%;
+    }
+  }
+  .observemore {
+    margin: .3rem auto 0;
+    display: inline-block;
+    border: .01rem solid #000;
+    height: 0.43rem;
+    border-radius: .22rem;
+    line-height: .43rem;
+    width: 1.31rem;
+    text-align: center;
+    outline: medium;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: .8rem;
+    padding:0;
+    &::before{
+      content: '';
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateY(-50%);
+        height: 0.15rem;
+        width: 0.12rem;
+        margin-top: 0.1rem;
+        margin-right: .08rem;
+        background-image: url("../../../../../assets/img/brandcenter/fansinteraction/watchmore.png");
+        background-size: 100% 100%;
+    }
+  }
+  .observemore:hover {
+    background-color: #d3b078;
+    color: #fff;
+    border: none;
+    &::before {
+      background-image: url("../../../../../assets/img/serviceIntroduce/morew.png");
+    }
+  }
+  .vedioList {
+    width: 15.98rem;
+    margin: 0 auto;
+    // height: 3.2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 1rem;
+    >div {
+      margin: 0 auto;
+      overflow: hidden;
+      width: 14rem;
+      height: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      
+      >ul {
+        margin: 0 auto;
+        width: 14rem;
+        // position: absolute;
+        // top: 0;
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        // top: 0;
+        li {
+          height: 100%;
+          box-sizing: border-box;
+          float: left;
+          margin-right: 0.35rem;
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 4.4rem;
+          >div{
+            height:2.6rem;
+          }
+          >.vediobox {
+            margin-top: .6rem;
+            position: relative;
+            height: 2.6rem;
+            width: 100%;
+            top: 0;
+            left: 0;
+            >img {
+              display: block;
+              &:first-of-type {
+                width: 100%;
+                height: 100%;
+              }
+              &:last-of-type {
+                position: absolute;
+                height: 0.56rem;
+                width: .56rem;
+                top: 50%;
+                margin-top: -.28rem;
+                left: 50%;
+                margin-left: -.28rem;
+              }
+            }
+           }
+          cursor: pointer;
+          img {
+            width: 4.4rem;
+            display: block;
+          }
+          i {
+            display: inline-block;
+            height: 0.56rem;
+            width: 0.56rem;
+            position: absolute;
+            top: .8rem;
+            left: 50%;
+            margin-left: -.28rem;
+            background: url('../../../../../assets/img/serviceIntroduce/play.png');
+            background-size: 100% 100%;
+          }
+          p {
+            font-size: 13px;
+            color: #000;
+            margin-top: .26rem;
+            padding-bottom: .26rem;
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+          &:nth-of-type(3n) {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .anticon {
+      position: absolute;
+      font-size: .4rem;
+      top: 1.1rem; 
+      color: #ccc;
+      &:hover {
+        color: #999;
+      }
+    }
+    .anticon-left-circle {
+      left: 0;
+    }
+    .anticon-right-circle {
+      right: 0;
+    }
+  }
+}
+.last {
+  background:#fff;
+  h2 {
+    padding-top: .2rem;
+  }
+}

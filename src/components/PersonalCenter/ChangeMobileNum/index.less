@@ -1,0 +1,181 @@
+.handleChangeMobileNum {
+  margin: 0 auto;
+  width: 14rem;
+  >h2 {
+    font-size: .3rem;
+    font-weight: 600;
+    padding-bottom: .4rem;
+    border-bottom: .01rem solid rgba(0, 0, 0, .1);
+    margin-bottom: .6rem;
+  }
+  >a {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #d3b078;
+    margin-bottom: .3rem;
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateY(-50%);
+      position: relative;
+      top: .12rem;
+      left: 0;
+      height: 0.28rem;
+      width: 0.28rem;
+      background-image: url("../../../assets/img/personsenter/return.png");
+      background-size: 100% 100%;
+      margin-right: .1rem;
+    }
+  }
+  .ChangeMobileBox {
+    width: 100%;
+    border: .01rem solid rgba(0, 0, 0, .1);
+    border-top: .03rem solid #d3b078;
+    padding: .61rem 0 .6rem;
+    margin-bottom: .21rem;
+    >ul {
+      width: 100%;
+      >li {
+        height: 0.4rem;
+        line-height: .4rem;
+        margin-bottom: .3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >label {
+          font-size: 13px;
+          color: #1b1b1b;
+        }
+        .input-disabled {
+          color: rgba(0, 0, 0, 0.25);
+          background-color: #f5f5f5;
+          cursor: not-allowed;
+          opacity: 1;
+        }
+        >input,
+        >div {
+          display: inline-block;
+          height: 100%;
+          line-height: 100%;
+          width: 3rem;
+          border: .01rem solid #999;
+          border-radius: .05rem;
+          outline: medium;
+          padding-left: .1rem;
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          >input {
+            border: none;
+            outline: medium;
+            height: 70%;
+            line-height: 70%;
+            width: 56%;
+            border-right: .01rem solid rgba(0, 0, 0, .1);
+          }
+          .sendBtn {
+            pointer-events: none;
+            color: rgba(153, 153, 153, .2);
+            //background-color: rgba(153, 153, 153, .2);
+          }
+          .canSendBtn {
+            //background-color: #d3b078;
+          }
+          >span {
+            font-size: 13px;
+            color: #d3b078;
+            padding-left: .17rem;
+            cursor: pointer;
+            >img{
+              height:.35rem;
+            }
+          }
+          
+        }
+        input::-webkit-input-placeholder {
+          color: #b9b9b9;
+        }
+        input:-moz-placeholder {
+          color: #b9b9b9;
+        }
+      }
+    }
+    .changebtn {
+      display: inline-block;
+      margin-top: .2rem;
+      height: 0.5rem;
+      line-height: .5rem;
+      width: 2.2rem;
+      text-align: center;
+      font-size: 15px;
+      color: #fff;
+      font-weight: 600;
+      background-color: #d3b078;
+      border-radius: .25rem;
+      cursor: pointer;
+    }
+  }
+  .warning {
+    width: 100%;
+    text-align: left;
+    >h3 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #666;
+      display: inline-block;
+    }
+    >div {
+      display: inline-block;
+      margin-left: .19rem;
+      vertical-align: top;
+      >p {
+        font-size: 13px;
+        color: #666;
+      }
+    }
+  }
+}
+
+.chengeMobilebox {
+  .ant-modal {
+    width: 10rem!important;
+    height: 4.06rem;
+    .ant-modal-content {
+      padding: 0.8rem 3.9rem;
+      .ant-modal-close {
+        display: none;
+      }
+      .ant-modal-header {
+        display: none;
+      }
+      .ant-modal-body {
+        text-align: center;
+        padding: 0;
+        >img {
+          width: .88rem;
+          display: block;
+          margin: 0 auto .29rem;
+        }
+        >p {
+          font-size: .28rem;
+          margin-bottom: .49rem;
+        }
+        >span {
+          display: inline-block;
+          height: 0.5rem;
+          line-height: .5rem;
+          width: 2.2rem;
+          text-align: center;
+          border-radius: .25rem;
+          background-color: #d3b078;
+          font-size: 15px;
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

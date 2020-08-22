@@ -1,0 +1,226 @@
+.handleExcellent {
+  margin: 0 auto;
+  width: 14rem;
+  text-align: center;
+  >h2 {
+    font-size: .3rem;
+    color: #000;
+    font-weight: 600;
+    padding-bottom: .4rem;
+    border-bottom: .01rem solid rgba(51, 51, 51, .18);
+  }
+  >img{
+    margin: 0 auto;
+    width: 7.52rem;
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: .67rem;
+  }
+  .really-excellent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .3rem;
+    .reallyLeft,
+    .excellentRight {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      >img {
+        display: inline-block;
+        height: 1.95rem;
+        margin-right: .23rem;
+      }
+      >ul {
+        text-align: left;
+        li {
+          font-size: .22rem;
+          font-weight: 600;
+        }
+      }
+    }
+    // .reallyLeft {
+    //   >ul>li:last-child {
+    //     padding-left: .22rem;
+    //   }
+    // }
+    // .excellentRight {
+    //   >ul>li {
+    //     &:nth-of-type(2),
+    //     &:nth-of-type(3),
+    //     &:nth-of-type(4) {
+    //       padding-left: .22rem;
+    //     }
+    //   }
+    // }
+  }
+  .really-excellect-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .42rem;
+    >span {
+      display: inline-block;
+      width: 6.6rem;
+      height: 1.71rem;
+      background: url('../../../../assets/img/brandcenter/enterprisebrand/contentbox.png');
+      background-size: 100% 100%;
+      padding-left: .45rem;    
+      padding-top: .4rem;
+      >div {
+        text-align: left;
+        width: 100%;
+        margin-bottom: .1rem;
+        >h1 {
+          display: inline-block;
+          font-size: .24rem;
+          font-weight: 600;
+          vertical-align: middle;
+        }
+        >i {
+          display: inline-block;
+          height: 0.26rem;
+          width: 0.02rem;
+          background-color: #000;
+          margin: 0 .14rem 0 .2rem;
+          vertical-align: middle;
+        }
+        >p {
+          display: inline-block;
+          font-size: 13px;
+          b {
+            display: inline-block;
+            font-size: .2rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .really-excellect-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .56rem;
+    >span {
+      display: inline-block;
+      >i {
+        display: inline-block;
+        width: 4.36rem;
+        height: 0.03rem; 
+        background-color: #d3b078;
+        margin-right: .18rem;
+      }
+      >h3 {
+        display: inline-block;
+        font-size: .5rem;
+        color: #d3b078;
+        font-weight: 600;
+        vertical-align: middle;
+      }
+    }
+  }
+  .feature {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .99rem;
+    >span {
+      display: inline-block;
+      >div {
+        margin-bottom: .3rem;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        img {
+          height: 0.2rem;
+          display: inline-block;
+          margin-right: .08rem;
+        }
+        h1 {
+          display: inline-block;
+          font-size: .35rem;
+          font-weight: 600;
+          color: #d3b078;
+          margin-right: .18rem;
+        }
+        h3 {
+          display: inline-block;
+          font-size: .22rem;
+          font-weight: 600;
+          color: #000;
+        }
+      }
+      >ul {
+        width: 6.6rem;
+        height: 1.6rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: .08rem;
+        border: .01rem solid #d3b078;
+        >li {
+          h2 {
+            font-size: .3rem;
+            color: #d3b078;
+            font-weight: 600;
+            margin-bottom: .19rem;
+            img {
+              height: 0.4rem;
+              margin-right: .1rem;
+              display: inline-block;
+              vertical-align: bottom;
+            }
+          }
+          h3 {
+            font-size: .2rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .brand-vedio {
+    margin-top: .6rem;
+    width: 100%;
+    height: 4.68rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    .vedio {
+      width: 100%;
+      height: 100%;
+    }
+    .play {
+      position: absolute;
+      height: 0.56rem;
+      width: 0.56rem;
+      top: 50%;
+      margin-top: -.28rem;
+      left: 50%;
+      margin-left: -.28rem;
+    }
+  }
+  .vediobox {
+    margin-top: .6rem;
+    position: relative;
+    height: 4.68rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    >img {
+      display: block;
+      &:first-of-type {
+        width: 100%;
+        height:100%;
+      }
+      &:last-of-type {
+        position: absolute;
+        height: 0.56rem;
+        top: 50%;
+        margin-top: -.28rem;
+        left: 50%;
+        margin-left: -.28rem;
+      }
+    }
+   }
+}

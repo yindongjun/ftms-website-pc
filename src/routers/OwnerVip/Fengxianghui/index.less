@@ -1,0 +1,69 @@
+.handlefhx {
+  max-width: 19.2rem;
+  margin: 0.8rem auto 1rem;
+  .fxh-header{
+    height: 3rem;
+    width: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+    } 
+  } 
+  >div {
+    width: 100%;
+    margin: a auto;
+    .NavList {
+      width: 100%;
+      display: flex;
+      height: 0.8rem;
+      line-height: .8rem;
+      margin-bottom: .8rem;
+      background-color: #eee;
+      
+      >a {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        border-right: .01rem solid #fff;
+        >li {
+          font-size: 15px;
+          font-weight: 600;
+          &:hover {
+            color: #d3b078;
+          }
+        }
+        &:hover {
+          background-color: #d3b078;
+          text-decoration: none;
+          >li {
+            color: #fff;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+        &:last-of-type {
+          border: none;
+        }
+      }
+      .selected {
+        background-color: #d3b078;
+        text-decoration: none;
+        >li {
+          color: #fff;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .serverhallContent {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      >img {
+        margin: 0 auto;
+      }
+    }
+  }
+}

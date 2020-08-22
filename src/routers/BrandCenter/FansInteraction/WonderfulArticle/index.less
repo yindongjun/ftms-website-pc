@@ -1,0 +1,149 @@
+.handleWonderfulArticle {
+  margin: 0 auto 1rem;
+  max-width: 19.2rem;
+  .WonderfulArticle {
+    margin: .86rem auto 0;
+    .headerPic {
+      width: 100%;
+      height: 3rem;
+      background: url('../../../../assets/img/brandcenter/fansinteraction/banner.png');
+      background-size: 100% 100%;
+      padding-top: 1.2rem;
+      margin-bottom: .81rem;
+      >span {
+        width: 14rem;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        >h1 {
+          font-size: .36rem;
+          font-weight: 600;
+          color: #fff;
+        }
+        >i {
+          display: block;
+          height: 0.02rem;
+          width: 0.24rem;
+          background-color: #fff;
+          margin: .15rem 0;
+        }
+      }
+    }
+    >img {
+      width: 100%;
+      display: block;
+    }
+    .ArticleList {
+      width: 14rem;
+      margin: .78rem auto 0;
+      text-align: center;
+      >h2 {
+        font-size: .3rem;
+        font-weight: 600;
+        padding-bottom: .4rem;
+        border-bottom: .01rem solid rgba(51, 51, 51, .18);
+        margin-bottom: .6rem;
+      }
+      >ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        >a {
+          display: inline-block;
+          margin-bottom: .49rem;
+          height:5.15rem;
+          width: 6.8rem;
+          position: relative;
+          >li {
+            width: 100%;
+            text-align: left;
+            >img {
+              width: 6.8rem;
+              height: 4rem;
+              display: block;
+              margin-bottom: .3rem;
+            }
+            h3 {
+              font-size: .24rem;
+              font-weight: 600;
+              margin-bottom: .2rem;
+              line-height: .3rem;
+            }
+            >div {
+              position: absolute;
+              left:0;
+              bottom:0;
+              >span {
+                font-size: 13px;
+                color: #999;
+                &:first-of-type {
+                  margin-right: .3rem;
+                  &::before {
+                    content: '';
+                    display: inline-block;
+                    vertical-align: middle;
+                    transform: translateY(-50%);
+                    height: 0.14rem;
+                    width: 0.14rem;
+                    margin-top: 0.13rem;
+                    margin-right: .05rem;
+                    background-image: url("../../../../assets/img/brandcenter/fansinteraction/date.png");
+                    background-size: 100% 100%;
+                  }
+                }
+                &:last-of-type{
+                  i {
+                    display: inline-block;
+                    font-size: 13px;
+                    color: #999;
+                    margin-left: .1rem;
+                    &::before {
+                      content: '';
+                      display: inline-block;
+                      vertical-align: middle;
+                      transform: translateY(-50%);
+                      height: 0.12rem;
+                      width: 0.14rem;
+                      margin-top: 0.08rem;
+                      margin-right: .05rem;
+                      background-image: url("../../../../assets/img/brandcenter/fansinteraction/share.png");
+                      background-size: 100% 100%;
+                    }
+                    &:first-of-type {
+                      &::before {
+                        width: 0.17rem;
+                        background-image: url("../../../../assets/img/brandcenter/fansinteraction/eye.png");
+                        background-size: 100% 100%;
+                      }
+                    }
+                    &:last-of-type {
+                      &::before {
+                        background-image: url("../../../../assets/img/brandcenter/fansinteraction/dotzan.png");
+                        background-size: 100% 100%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .watchmore {
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin-top: .11rem;
+      font-size: 13px;
+      color: #999;
+      cursor: pointer;
+      .anticon {
+        display: block;
+        margin-top: .13rem;
+      }
+    }
+  }
+}

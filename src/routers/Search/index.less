@@ -1,0 +1,87 @@
+.handleSearch {
+  margin: 0.8rem auto 1rem;
+  width: 14rem;
+  padding-top: .8rem;
+  .searchBox {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    >input {
+      height: 0.4rem;
+      width: 8.14rem;
+      border-radius: .05rem;
+      border: .01rem solid #999;
+      padding-left: .1rem;
+      margin-right: .2rem;
+      outline: #d3b078;
+      font-size: 13px;
+    }
+    >a {
+      height: 0.4rem;
+      width: 0.84rem;
+      background-color: #d3b078;
+      border-radius: .05rem;
+      >img {
+        margin-top: .09rem;
+        height: 0.22rem;
+      }
+    }
+  }
+  >ul {
+    width: 100%;
+    margin: .4rem auto .4rem;
+    li {
+      padding: .3rem 0;
+      border-bottom: .01rem solid rgba(0, 0, 0, .15);
+      &:first-of-type {
+        font-size: 13px;
+        color: #000;
+        border-top: .01rem solid rgba(0, 0, 0, .15);
+        >i {
+          color: #e50020;
+        }
+      }
+      >h2 {
+        font-size: .28rem;
+        font-weight: 600;
+        margin-bottom: .1rem;
+        >strong {
+          color: #e50020;
+        }
+      }
+      >h3 {
+        font-size: .32rem;
+        font-weight: 600;
+        margin-bottom: .1rem;
+        >strong {
+          color: #e50020;
+        }
+      }
+      >p {
+        height: 0.3rem;
+        font-size: 13px;
+        color: #000;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: .2rem;
+      }
+      >span {
+        display: block;
+        font-size: 13px;
+        color: #b9b9b9;
+      }
+    }
+  }
+  >span {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    .anticon {
+      display: block;
+      margin-top: .13rem;
+    }
+  }
+}

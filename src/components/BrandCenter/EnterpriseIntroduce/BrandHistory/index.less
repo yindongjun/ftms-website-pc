@@ -1,0 +1,140 @@
+.handleBrandHistory {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2.8rem;
+  .ant-timeline {
+    width: 100%;
+    .ant-timeline-item {
+      .ant-timeline-item-content {
+        // height: 1.45rem;
+        // line-height: 1.45rem;
+        width: 5.58rem;
+        text-align: center;
+        background: url('../../../../assets/img/companyprofile/bulr.png');
+        background-size: 100% 100%;
+        margin: 0;
+        padding: .3rem .55rem 0.3rem .47rem;
+        text-align: left;
+        h1 {
+          font-size: .24rem;
+          font-weight: 600;
+          margin-bottom: .2rem;
+        }
+        >ul {
+          list-style: disc;
+          .li_top{
+            font-size: .24rem;
+            font-weight: 600;
+            margin-bottom: .2rem;
+            list-style: none;
+            margin-left:-0.24rem;
+          }
+          li {
+            font-size: 15px;
+            text-align: left;
+            margin-bottom: .19rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .ant-timeline-item-tail{
+        border-left: 2px solid #e1c9a3;
+        top:0.3rem;
+      }
+      .ant-timeline-item-head {
+        height: 1rem;
+        line-height: 1rem;
+        width: 1rem;
+        text-align: center;
+        background: url('../../../../assets/img/companyprofile/TimeDot.png');
+        background-size: 100% 100%;
+        padding: 0;
+        top: 0;
+        bottom:0;
+        margin:auto;
+        >span {
+          font-size: .3rem;
+        }
+        >i{
+          width:.5rem;
+          height:.5rem;
+        }
+      }
+    
+      .ant-timeline-item-content{
+        top:-.4rem;
+      }
+     
+      
+      
+      &:first-child {
+        .ant-timeline-item-head {
+          width: 0;
+          height: 0;
+        }
+        .ant-timeline-item-tail {
+          height:1.5rem;
+          top: -.8rem;
+        }
+
+        .ant-timeline-item-content {
+          height: 0;
+          width: 0;
+          padding: 0;
+        }
+      }
+      &:last-child {
+        .ant-timeline-item-head {
+          width: .25rem;
+          height: .25rem;
+          margin:auto .02rem auto;
+        }
+        .ant-timeline-item-tail {
+          top: 1rem;
+        }
+
+        .ant-timeline-item-content {
+          height: 0;
+          width: 0;
+          padding: 0;
+        }
+      }
+    }
+    .ant-timeline-item-left {
+      .ant-timeline-item-content {
+        left: 62%;
+        background: url('../../../../assets/img/companyprofile/bulr1.png');
+        background-size: 100% 100%;
+        h1 {
+          margin-left: .15rem;
+        }
+        ul {
+          margin-left: .4rem;
+        }
+      }
+    }
+    .ant-timeline-item-right {
+      .ant-timeline-item-content {
+        ul {
+          margin-left: .25rem;
+        }
+      }
+    }
+
+  }
+  .watchmore {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: .6rem;
+    font-size: 13px;
+    color: #999;
+    cursor: pointer;
+    .anticon {
+      display: block;
+      margin-top: .13rem;
+    }
+  }
+}

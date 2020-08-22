@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  ftms-website-pc:
+    build:
+      context: ./
+    image: ftms/ftms-website-pc
+    ports:
+      - "9080:80"

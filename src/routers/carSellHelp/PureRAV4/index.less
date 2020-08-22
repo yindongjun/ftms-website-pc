@@ -1,0 +1,309 @@
+.handlePureRAV4 {
+  max-width: 19.2rem;
+  min-width:1100px;
+  width: 100%;
+  margin: 0.8rem auto 0;
+  background: url('../../../assets/img/carSellHelp/purerav4/bg_mm1_02.jpg');
+  background-size: 100% 100%;
+  position:relative;
+  >img{
+    width:100%;
+  }
+  .PureRAV4 {
+    width: 90%;
+    margin: 0 auto;
+    top:30px;
+    position:absolute;
+    left:0;
+    right:0;
+    .name-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: .2rem;
+
+      .ant-dropdown-link {
+        font-size: .3rem;
+        font-weight: 600;
+
+        &:hover,
+        &:focus {
+          color: #d3b078;
+        }
+
+        &:active,
+        &:focus {
+          text-decoration: none;
+        }
+
+        .anticon {
+          font-size: .28rem;
+          color: #d3b078;
+          margin-left: .1rem;
+        }
+      }
+
+      > h2 {
+        font-size: .2rem;
+        font-weight: 600;
+
+        > strong {
+          font-size: .3rem;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      position:relative;
+      .typeNav {
+        display: flex;
+        justify-content: flex-start;
+        height: .35rem;
+        cursor:pointer;
+        > li {
+          padding-bottom: .1rem;
+          border-bottom: .03rem solid rgba(0, 0, 0, 0);
+          margin-right: .4rem;
+          font-size: 15px;
+        }
+
+        .sel-type {
+          font-weight: 600;
+          border-color: #d3b078;
+        }
+      }
+
+      .produceList {
+        width: 2rem;
+        cursor:pointer;
+        > i {
+          display: block;
+          width: 100%;
+          text-align: center;
+          height: 0.3rem;
+          line-height: .3rem;
+          background-color: #d3b078;
+          border-radius: .05rem;
+
+          .anticon {
+            font-size: .24rem;
+            color: #fff;
+          }
+
+          &:first-of-type {
+            margin-bottom: .1rem;
+          }
+        }
+
+        > ul {
+          width: 100%;
+          max-height: 5.2rem;
+          overflow: hidden;
+          > li {
+            width: 100%;
+            height: 1.2rem;
+            background: #ffffff;
+            background-size: 100% 100%;
+            margin-bottom: .1rem;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            transition:all 0.5s;
+            > img {
+              width: 100%;
+            }
+
+            > i {
+              width: 100%;
+              padding: 0 3%;
+              position: absolute;
+              bottom: 0;
+              line-height:18px;
+              background: rgba(0, 0, 0, 0.9);
+              left: 0;
+              color: #ffffff;
+            }
+
+            > span {
+              position: absolute;
+              display: none;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              text-align: center;
+              height: 0.3rem;
+              line-height: .3rem;
+              background-color: #d3b078;
+              color: #fff;
+              font-size: 13px;
+              z-index: 1;
+
+              &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                transform: translateY(-50%);
+                height: 0.16rem;
+                width: 0.16rem;
+                margin-top: 0.15rem;
+                margin-right: .1rem;
+                background-image: url('../../../assets/img/carSellHelp/purerav4/white.png');
+                background-size: 100% 100%;
+              }
+            }
+
+            &:hover {
+              > span {
+                display: block;
+              }
+            }
+          }
+
+          .showBorder {
+            border: .03rem solid #d3b078;
+
+            &::before {
+              content: '';
+              display: inline-block;
+              position: absolute;
+              height: 0.21rem;
+              width: 0.21rem;
+              top: -.01rem;
+              left: -.01rem;
+              background-image: url('../../../assets/img/carSellHelp/purerav4/checked.png');
+              background-size: 100% 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+.decorate{
+  width:6.24rem;
+  height:3.67rem;
+  margin-top:1.1rem;
+  position:relative;
+  margin-left:-2rem;
+  >div{
+    position:absolute;
+    top:0;
+    left:0;
+    >img{
+      position:absolute;
+    }
+  }
+  >img{
+    width:100%;
+  }
+}
+.angles{
+  position:absolute;
+  top:1.1rem;
+  width:6.24rem;
+  height:3.67rem;
+  left:0;
+  right:0;
+  margin:auto;
+  .a0{
+    position:absolute;
+    top:2rem;
+    left:-3.4rem;
+    background:url(../../../assets/img/carSellHelp/purerav4/chexingimg/D0.png) no-repeat center center;
+  }
+  .a180{
+    position:absolute;
+    top:4.3rem;
+    left:2.3rem;
+    background:url(../../../assets/img/carSellHelp/purerav4/chexingimg/D180.png) no-repeat center center;
+  }
+  .a360{
+    position:absolute;
+    top:2rem;
+    left:7.8rem;
+    background:url(../../../assets/img/carSellHelp/purerav4/chexingimg/D360.png) no-repeat center center;
+  }
+  >span{
+    width:100px;
+    height:70px;
+    float:left;
+    margin-left:30px;
+    cursor:pointer;
+  }
+}
+
+
+  .infoPicModal {
+    > .ant-modal-content {
+      width: 9rem;
+      min-height: 6.7rem;
+      left: -1rem;
+      padding-bottom: 0.2rem;
+      > .ant-modal-close {
+        position: absolute;
+        top: -0.15rem;
+        right: -0.15rem;
+        > .ant-modal-close-x{
+          background: rgb(211, 176, 120);
+          border-radius: 0.13rem;
+          width: 0.26rem;
+          height: 0.26rem;
+          color: #fff;
+          line-height: 0.28rem;
+        }
+      }
+      > .ant-modal-body {
+        padding: 0;
+        > .picture {
+          margin-bottom: 0.3rem;
+          > img {
+            width: 9rem;
+            height: 4.2rem;
+          }
+        }
+        > h2 {
+          margin-left: 0.4rem;
+          margin-right: 0.4rem;
+          font-size: 0.24rem;
+          line-height: 0.24rem;
+          height: 0.24rem;
+          margin-bottom: 0.2rem;
+          > span {
+            float: right;
+            font-weight: normal;
+            font-size: 13px;
+            > i{
+              // font-size: 0.28rem;
+              // font-weight: 700;
+              color: rgb(211, 176, 120);
+            }
+          }
+        }
+        > p {
+          margin-left: 0.4rem;
+          margin-right: 0.4rem;
+          margin-bottom: 0.54rem;
+        }
+        > .Btn {
+          display: block;
+          width: 2.2rem;
+          height: 0.5rem;
+          background: rgb(211, 176, 120);
+          border-radius: 0.25rem;
+          text-align: center;
+          line-height: 0.5rem;
+          font-size: 15px;
+          color: #fff;
+          cursor: pointer;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+
+
+
+}

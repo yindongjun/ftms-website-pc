@@ -1,0 +1,256 @@
+.handleInsuranceComputer {
+  width: 14rem;
+  margin: 0 auto;
+
+  .formList {
+    width: 100%;
+    text-align: left;
+    margin-bottom: .35rem;
+
+    >span {
+      display: inline-block;
+      >label {
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: .27rem;
+      }
+      > span{
+        height: .4rem !important;
+        line-height:.4rem;
+        >div{
+          >i{
+            cursor: pointer;
+          }
+        }
+      }
+      >i {
+        font-size: .2rem;
+        color: #d3b078;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      // .ant-calendar-picker-icon {
+      //   top: 50%;
+      // }
+      &:first-of-type {
+        margin-right: .99rem;
+      }
+
+      &:first-of-type {
+        >label {
+          letter-spacing: .05rem;
+          >span {
+            font-weight: normal;
+          }
+        }
+      }
+      &:nth-child(2) {
+        margin-right: .99rem;
+      }
+
+      &:nth-child(2) {
+        >label {
+          letter-spacing: .05rem;
+          >span {
+            font-weight: normal;
+          }
+        }
+      }
+      .ant-input,
+      .ant-select {
+        font-size: 13px;
+      }
+      .ant-input:hover,
+      .ant-input:focus {
+        border-color: #d3b078;
+      }
+      .ant-checkbox-wrapper {
+        margin-right: .52rem;
+        .ant-checkbox-checked .ant-checkbox-inner {
+          background-color: #d3b078;
+          border-color: #d3b078;
+        }
+        &:hover .ant-checkbox-inner,
+        .ant-checkbox:hover .ant-checkbox-inner,
+        .ant-checkbox-input:focus+.ant-checkbox-inner {
+          border-color: #d3b078;
+        }
+      }
+      .ant-select-selection:hover,
+      .ant-select-selection:focus,
+      .ant-select-selection:active {
+        border-color: #d3b078;
+      }
+      .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+        border-color: #d3b078;
+      }
+      .ant-select-selection {
+        .ant-select-selection-selected-value {
+          color: rgba(0, 0, 0, 0.5)
+        }
+      }
+    }
+  }
+  .forceInsurance {
+    width: 100%;
+    margin: .6rem 0;
+    >li {
+      height: 0.8rem;
+      text-align: center;
+      width: 100%;
+      >dl {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        >dd {
+          width: 25%;
+          height: 100%;
+          text-align: center;
+          font-size: 13px;
+          border-right: .01rem solid rgba(0,0,0,.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .ant-checkbox-wrapper {
+            >span {
+              font-size: 13px;
+              font-weight: 600;
+              color: #d3b078;
+            }
+            .ant-checkbox-checked .ant-checkbox-inner {
+              background-color: #d3b078;
+              border-color: #d3b078;
+            }
+            &:hover .ant-checkbox-inner,
+            .ant-checkbox:hover .ant-checkbox-inner,
+            .ant-checkbox-input:focus+.ant-checkbox-inner {
+              border-color: #d3b078;
+            }
+          }
+          &:first-of-type {
+            border-left: .01rem solid rgba(0,0,0,.1);
+          }
+          &:last-of-type {
+            flex-direction: column;
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+      &:first-of-type {
+        background-color: rgba(0,0,0,.7);
+        font-size: .24rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: .8rem;
+      }
+      &:nth-of-type(2) {
+        height: 0.6rem;
+        line-height: .6rem;
+        background-color: #eee;
+      }
+      &:last-of-type {
+        border-bottom: .01rem solid rgba(0,0,0,.1);
+        >dl>dd:nth-of-type(3) {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .commercial-insurance {
+    width: 100%;
+    >li {
+      height: 0.8rem;
+      // line-height: .8rem;
+      >ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border-bottom: .01rem solid rgba(0,0,0,.1);
+        >li {
+          height: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          border-right: .01rem solid rgba(0,0,0,.1);
+          font-size: 13px;
+          .ant-checkbox-wrapper {
+            margin: 0 .4rem 0 0;
+            >span {
+              font-size: 13px;
+            }
+            .ant-checkbox-checked .ant-checkbox-inner {
+              background-color: #d3b078;
+              border-color: #d3b078;
+            }
+            &:hover .ant-checkbox-inner,
+            .ant-checkbox:hover .ant-checkbox-inner,
+            .ant-checkbox-input:focus+.ant-checkbox-inner {
+              border-color: #d3b078;
+            }
+          }
+          &:first-of-type {
+            width: 3rem;
+            border-left: .01rem solid rgba(0,0,0,.1);
+            padding-left: .31rem;
+          }
+          &:nth-of-type(2){
+            width: 4.75rem;
+            padding-left: .31rem;
+            .ant-checkbox-wrapper {
+              >span {
+                font-weight: 600;
+                color: #d3b078;
+              }
+            }
+          }
+          &:nth-of-type(3) {
+            width: 2.2rem;
+            font-weight: 600;
+            justify-content: center;
+          }
+          &:last-of-type {
+            width: 4.05rem;
+            text-align: left;
+            padding: 0 .47rem;
+            font-size: 13px;
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        height: 0.6rem;
+        line-height: .6rem;
+        background-color: #f3f3f3;
+        >ul>li {
+          justify-content: center;
+        }
+      }
+      &:first-of-type {
+        background-color: #d3b078;
+        font-size: .24rem;
+        font-weight: 600;
+        line-height: .8rem;
+        color: #fff;
+      }
+    }
+  }
+  .bottompart {
+    margin-top: .39rem;
+    text-align: right;
+    >h3 {
+      font-size: 13px;
+      color: #d3b078;
+      font-weight: 600;
+      >i {
+        font-size: .33rem;
+        color: #d3b078;
+      }
+    }
+    >p {
+      font-size: 13px;
+      color: #000;
+    }
+  }
+}

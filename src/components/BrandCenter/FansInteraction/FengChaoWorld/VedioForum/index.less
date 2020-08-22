@@ -1,0 +1,206 @@
+.VedioForumRemarkList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: .81rem;
+  >li {
+    width: 6.92rem;
+    box-sizing: border-box;
+    box-shadow: rgba(51, 51, 51, .18) .0rem .01rem .5rem .01rem;
+    border-radius: .1rem;
+    padding: .28rem .3rem .33rem .31rem;
+    text-align: left;
+    margin-bottom: .28rem;
+    cursor: pointer;
+    .ListHeader {
+      height: .43rem;
+      line-height: .43rem;
+
+      >img {
+        height: 0.44rem;
+        display: inline-block;
+        margin-right: .1rem;
+        float: left;
+        // border-radius: 50%;
+      }
+
+      h1 {
+        float: left;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: .26rem;
+      }
+
+      >i {
+        display: inline-block;
+        height: 0.3rem;
+        line-height: .3rem;
+        // width: 0.9rem;
+        text-align: center;
+        background-color: #d3b078;
+        color: #fefefe;
+        font-size: 13px;
+        border-radius: .13rem;
+        padding: 0 .1rem;
+        &:nth-of-type(2) {
+          color: #000;
+          margin-left: .26rem;
+          background-color: #f3f3f3;
+        }
+      }
+
+      >span {
+        float: right;
+        display: inline-block;
+        height: 0.43rem;
+        line-height: .43rem;
+        width: 1.31rem;
+        text-align: center;
+        border-radius: .22rem;
+        border: .01rem solid #000;
+        font-size: 13px;
+        font-weight: 600;
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          height: 0.16rem;
+          width: 0.16rem;
+          margin-top: 0.1rem;
+          margin-right: .08rem;
+          background-image: url("../../../../../assets/img/brandcenter/fansinteraction/notice-icon.png");
+          background-size: 100% 100%;
+          font-size: 13px;
+        }
+      }
+      > span:hover{
+        color: #fff;
+        background: #d3b078;
+        border: .01rem solid #d3b078;
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          height: 0.16rem;
+          width: 0.16rem;
+          margin-top: 0.1rem;
+          margin-right: .08rem;
+          background-image: url("../../../../../assets/img/brandcenter/fansinteraction/notice-icon-w.png");
+          background-size: 100% 100%;
+          font-size: 13px;
+        }
+      }
+    }
+    .activityTitle {
+      margin-top: .3rem;
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin-bottom: .46rem;
+      font-size: .2rem;
+      min-height: .66rem;
+    }
+    .imgshow {
+      width: 100%;
+      height: 1.05rem;
+      margin-bottom: .21rem;
+      >span {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        width: 1.76rem;
+        top: 0;
+        left: 0;
+        margin-right: .19rem;
+        float: left;
+        overflow:hidden;
+        >img {
+          width: 100%;
+          &:last-of-type {
+            position: absolute;
+            height: 0.41rem;
+            width: 0.41rem;
+            top: 50%;
+            margin-top: -.2rem;
+            left: 50%;
+            margin-left: -.2rem;
+          }
+        }
+      }
+    }
+    .ListBottomIcon {
+      span {
+        font-size: 13px;
+          color: #999;
+        &:first-of-type {
+          &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            height: 0.14rem;
+            width: 0.14rem;
+            margin-top: 0.1rem;
+            margin-right: .08rem;
+            background-image: url("../../../../../assets/img/brandcenter/fansinteraction/date.png");
+            background-size: 100% 100%;
+          }
+        }
+        &:last-of-type {
+          float: right;
+          i {
+            display: inline-block;
+            margin-left: .1rem;
+            &::before {
+              content: '';
+              display: inline-block;
+              vertical-align: middle;
+              transform: translateY(-50%);
+              height: 0.11rem;
+              width: 0.17rem;
+              margin-top: 0.08rem;
+              margin-right: .05rem;
+              background-image: url("../../../../../assets/img/brandcenter/fansinteraction/eye.png");
+              background-size: 100% 100%;
+            }
+            &:nth-of-type(2) {
+              &::before {
+                height: 0.14rem;
+                width: 0.14rem;
+                margin-top: 0.1rem;
+                background-image: url("../../../../../assets/img/brandcenter/fansinteraction/remark.png");
+                background-size: 100% 100%;
+                cursor: pointer;
+              }
+            }
+            &:nth-of-type(3) {
+              &::before {
+                height: 0.12rem;
+                width: 0.14rem;
+                background-image: url("../../../../../assets/img/brandcenter/fansinteraction/dotzan.png");
+                background-size: 100% 100%;
+                cursor: pointer;
+              }
+            }
+            &:last-of-type {
+              &::before {
+                height: 0.15rem;
+                width: 0.13rem;
+                background-image: url("../../../../../assets/img/brandcenter/fansinteraction/share.png");
+                background-size: 100% 100%;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    &:nth-of-type(2n) {
+      margin-left: .14rem;
+    }
+  }
+}

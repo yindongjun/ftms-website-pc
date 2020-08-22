@@ -1,0 +1,203 @@
+.handleEnterpriseProfile {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  .title{
+    width: 14rem;
+    margin: 0 auto;
+    padding-bottom: .35rem;
+    border-bottom: .01rem solid rgba(51, 51, 51, .18);
+    h2 {
+      font-size: .3rem;
+      font-weight: 600;
+      color: #000;
+    }
+    p {
+      font-size: 13px;
+      color: #999;
+    }
+  }
+  .EnterpriseIntroduce {
+    width: 14rem;
+    margin: 0 auto;
+    .EnterpriseIntroduceContent {
+      margin-top: .77rem;
+      display: flex;
+      justify-content: flex-start;
+      >img{
+        height: 4.05rem;
+        display: inline-block;
+        margin-right: .99rem;
+      }
+      >span {
+        display: inline-block;
+        text-align: left;
+        height: 4.05rem;
+        >div {
+          // padding-bottom: .2rem;
+          display: flex;
+          >i {
+            display: inline-block;
+            font-size: .18rem;
+            width: .9rem;
+            text-align: justify;
+            color: #999;
+            margin-right: .38rem;
+            &::after {
+              content: '';
+              display: inline-block;
+              width: 100%;
+            }
+          }
+          >span {
+            font-size: .18rem;
+            color: #000;
+            vertical-align: top;
+          }
+          &:nth-of-type(7) {
+            margin-bottom: .2rem;
+          }
+        }
+      }
+    }
+    .EnterpriseTotal {
+      width: 100%;
+      margin-top: .4rem;
+      margin-bottom: 1.03rem;
+      > li:first-child{
+        font-weight: 600;
+      }
+      >li {
+        width: 100%;
+        height: 0.5rem;
+        line-height: .5rem;
+        display: flex;
+        justify-content: flex-start;
+        >span {
+          display: inline-block;
+          width: 16.67%;
+          border-right: .01rem solid #fff;
+          font-size: .17rem;
+          &:last-of-type {
+            border: none;
+          }
+        }
+        &:first-child {
+          background-color: #d3b078;
+          span {
+            color: #fff;
+          }
+        }
+        &:nth-of-type(2) {
+          background-color: #eee;
+        }
+        &:last-of-type {
+          background-color: #fcfcfc;
+        }
+      }
+    }
+  }
+  .enterpriseidea{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: .8rem 0 1rem;
+    .ideacontent {
+      width: 14rem;
+      margin: .79rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      >li {
+        width: 4.4rem;
+        height: 2.64rem;
+        background: url('../../../../assets/img/brandcenter/enterpriseintroduce/M.png');
+        background-size: 100% 100%;
+        padding: .4rem .48rem 0;
+        text-align: left;
+        h3 {
+          font-size: .24rem;
+          color: #fff;
+          font-weight: 600;
+        }
+        i {
+          display: block;
+          height: 0.02rem;
+          width: 0.2rem;
+          background-color: #fff;
+          margin: .26rem 0 .24rem;
+        }
+        p {
+          font-size: 14px;
+          color: #fff;
+          line-height: .3rem;
+        }
+        &:nth-of-type(2) {
+          background: url('../../../../assets/img/brandcenter/enterpriseintroduce/S.png');
+          background-size: 100% 100%;
+        }
+        &:last-of-type {
+          background: url('../../../../assets/img/brandcenter/enterpriseintroduce/A.png');
+          background-size: 100% 100%;
+          p {
+            width: 2.6rem;
+            >span {
+              float: right;
+              color: #fff;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  .manageidea {
+    margin: 0 auto .14rem;
+    width: 14rem;
+    padding-top: .8rem;
+    .managecontent {
+      margin-top: .8rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left:1.41rem;
+      padding-right:1.32rem;
+      >img {
+        height: 5.02rem;
+        display: inline-block;
+        margin-right: .92rem;
+      }
+      >div {
+        text-align: left;
+        h3 {
+          font-size: .24rem;
+          color: #333;
+          font-weight: 600;
+          margin-bottom: .3rem;
+        }
+        p {
+          font-size: 13px;
+          color: #333;
+          line-height: .3rem;
+          &:last-of-type {
+            font-size: 13px;
+          }
+        }
+        i {
+          display: block;
+          height: 0.01rem;
+          width: 0.43rem;
+          background-color: #333;
+          margin: .35rem 0;
+        }
+        h1 {
+          font-size: .24rem;
+          font-weight: 600;
+          color: rgba(210, 210, 210, .3);
+          &:first-of-type {
+            margin-top: .2rem;
+          }
+        }
+      }
+    }
+  }
+}

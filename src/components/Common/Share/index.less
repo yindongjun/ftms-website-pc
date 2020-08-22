@@ -1,0 +1,66 @@
+.ant-tooltip-content {
+  width: 2.6rem;
+  box-sizing: border-box;
+  height: 1.51rem;
+  box-shadow: rgba(51, 51, 51, .18) 0 .01rem .5rem .01rem;
+  z-index: 1;
+  .ant-tooltip-arrow {
+    top: -.03rem;
+    border-width: 0 .15rem .15rem;
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .ant-tooltip-inner {
+    padding: .2rem .2rem .2rem .17rem;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
+    border: none;
+    .sharebox {
+      display: flex;
+      align-content: center;
+      align-items: center;
+
+      >span {
+        float: left;
+        padding-right: .22rem;
+        border-right: .01rem solid rgba(51, 51, 51, .18);
+        margin-right: .2rem;
+
+        p {
+          font-size: 13px;
+          color: #000;
+          margin-bottom: .05rem;
+        }
+
+        >img {
+          width: 0.8rem;
+          display: block;
+        }
+      }
+
+      >ul {
+        float: right;
+
+        >li {
+          display: flex;
+          align-items: center;
+          margin-bottom: .1rem;
+          >img {
+            width: 0.18rem;
+          }
+
+          span {
+            display: inline-block;
+            font-size: 13px;
+            color: #000;
+            margin-left: .11rem;
+            cursor: pointer;
+          }
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

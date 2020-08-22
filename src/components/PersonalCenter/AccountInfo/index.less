@@ -1,0 +1,173 @@
+.handleAccountInfo {
+  margin: 0 auto;
+  width: 14rem;
+  >h2 {
+    font-size: .3rem;
+    font-weight: 600;
+    padding-bottom: .4rem;
+    border-bottom: .01rem solid rgba(0, 0, 0, .1);
+    margin-bottom: .6rem;
+  }
+  >a {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #d3b078;
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateY(-50%);
+      position: relative;
+      top: .12rem;
+      left: 0;
+      height: 0.28rem;
+      width: 0.28rem;
+      background-image: url("../../../assets/img/personsenter/return.png");
+      background-size: 100% 100%;
+      margin-right: .1rem;
+    }
+  }
+  .AccountInfo {
+    margin-top: .2rem;
+    width: 100%;
+    // height: 4.9rem;
+    border: .01rem solid rgba(0, 0, 0, .1);
+    border-top: .03rem solid #d3b078;
+    padding: .6rem 0;
+    >p {
+      height: 1.64rem;
+    }
+    >p img {
+      max-width: 1.64rem;
+      max-height: 1.64rem;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    >p>.imgBox {
+      width: 1.64rem;
+      height: 1.64rem;
+      margin: 0 auto .1rem;
+      position: relative;
+    }
+    >p >input {
+      height: 1.2rem;
+      width:1.2rem;
+      display: block;
+      margin: 0 auto .1rem;
+      border-radius: 50%;
+      position: relative;
+      top: -1.28rem;
+      outline: none;
+      opacity: 0;
+      cursor: pointer;
+    }
+    >span {
+      display: block;
+      font-size: 13px;
+      color: #a0a0a0;
+      margin-bottom: .29rem;
+    }
+    >.username {
+      margin-bottom: .19rem;
+      >label {
+        font-size: 13px;
+        color: #1b1b1b;
+        display: inline-block;
+        height: .4rem;
+        line-height: .4rem;
+        vertical-align: top;
+      }
+      >span {
+        text-align: left;
+        display: inline-block;
+        margin-left: .3rem;
+        >input {
+          height: 0.4rem;
+          line-height: .4rem;
+          width: 2.4rem;
+          border: .01rem solid #999;
+          border-radius: .05rem;
+          padding: 0 .05rem;
+          font-size: 13px;
+          outline: medium;
+        }
+        i {
+          display: block;
+          margin-top: .09rem;
+          font-size: 13px;
+          color: #b9b9b9;
+        }
+      }
+    }
+    .sex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      >label {
+        font-size: 13px;
+        color: #1b1b1b;
+        display: inline-block;
+        height: .4rem;
+        line-height: .4rem;
+        vertical-align: top;
+      }
+      >span {
+        display: inline-block;
+        width: 2.4rem;
+        margin-left: .3rem;
+        text-align: left;
+        i {
+          position: relative;
+          display: inline-block;
+          font-size: 13px;
+          color: #1b1b1b;
+          margin-right: .4rem;
+          b {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            position: relative;
+            top: .08rem;
+            left: 0;
+            height: 0.2rem;
+            width: 0.2rem;
+            background-image: url("../../../assets/img/personsenter/unsel.png");
+            background-size: 100% 100%;
+            margin-right: .08rem;
+          }
+          .check_sex {
+            background-image: url("../../../assets/img/personsenter/sel.png");
+          }
+          input {
+            position: absolute;
+            left: 0;
+            top:0;
+            height: 0.2rem;
+            width: 0.2rem;
+            opacity:0;
+          }
+        }
+      }
+    }
+    .savebtn {
+      height: 0.5rem;
+      line-height: .5rem;
+      width: 2.2rem;
+      text-align: center;
+      border: none;
+      border-radius: .25rem;
+      background-color: #d3b078;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      margin-top: .49rem;
+      outline: medium;
+    }
+  }
+}

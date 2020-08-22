@@ -1,0 +1,219 @@
+.header-nav {
+  width: 100%;
+  max-width: 19.2rem;
+  padding: 0 .5rem;
+  height: 0.8rem;
+  line-height: .8rem;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: #fff;
+  z-index: 999;
+  top: 0;
+  .rightMask{
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    background-color: #fff;
+  }
+  .headList{
+    position: relative;
+    width: 18.2rem;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: .01rem solid rgba(0, 0, 0, .1);
+    .ant-dropdown-open {
+      background-color: #eee;
+      //background-color: #fff;
+    }
+    >.log {
+      width: 1.6rem;
+      text-align: center;
+    }
+    >li {
+      float: left;
+      border-right: .01rem solid rgba(0, 0, 0, .1);
+      &:first-child {
+        padding: 0 0.89rem 0 .89rem;
+        span {
+          display: inline-block;
+          width: 2.3rem;
+          height: 0.4rem;
+          vertical-align: middle;
+          background: url('../../../assets/img/officislSite/logo2.png');
+          background-size: 100% 100%;
+        }
+      }
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        padding-left: .33rem;
+        width: 3.9rem;
+        font-size: 15px;
+        color: #1a1a1a;
+        .ant-dropdown-link {
+          color: #000;
+          i>svg {
+            color: #d3b078;
+          }
+        }
+      }
+      &:nth-child(5) {
+        padding: 0 .5rem;
+        img {
+          height: 0.22rem;
+          width: 0.22rem;
+          cursor: pointer;
+        }
+      }
+      &:last-child {
+        padding: 0 0.5rem;
+        border: none;
+        z-index: 1000;
+        background-color: #fff;
+        //border-bottom: 0.01rem solid #fff;
+        a {
+          display: inline-block;
+          height: 0.22rem;
+          width: 0.22rem;
+          background-color: #fff !important;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+    > .li_active {
+      background: #eee;
+    }
+  }
+  .searchBox {
+    position: absolute;
+    height: 0.8rem;
+    width: 13rem;
+    background-color: #eee;
+    top: 0;
+    left: 100%;
+    padding-left: .3rem;
+    transition: all .6s;
+    >a {
+      display: inline-block;
+      height: 100%;
+      width: 95%;
+      color: #000;
+      >input {
+        height: 100%;
+        width: 90%;
+        border: none;
+        outline: medium;
+        font-size: 15px;
+        background-color: #eee;
+        &::-webkit-input-placeholder {
+          color: #999;
+        }
+      }
+    }
+    > a:hover{
+      color: #000;
+    }
+    >a:visited{
+      color: #000;
+    }
+    >.anticon {
+      font-size: .3rem;
+    }
+  }
+}
+.persondrop {
+  position: fixed !important;
+  top: .8rem!important;
+  //right: 1rem;
+  left: 91% !important;
+  width: 1.5rem;
+  background-color: #fafafa;
+  .personDropdown {
+    height: 2rem;
+    padding: 0;
+    border-radius: 0;
+    .ant-dropdown-menu-item {
+      text-align: center;
+      height: 1rem;
+      line-height: 1rem;
+      border-bottom: 0.01rem solid #d6d6d6;
+      &:hover {
+        background-color: #eee;
+      }
+      a {
+        display: inline-block;
+        font-size: 13px;
+        color: #1b1b1b;
+        margin: 0;
+        padding: 0;
+        &:hover {
+          color: #d3b078;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+.headerdrop {
+  width: 18.22rem;
+  background-color: #fafafa;
+  left: 50%!important;
+  top: .8rem!important;
+  margin-left: -9.11rem;
+  padding-left: 2.3rem;
+  .HeaderDropdown {
+    position: fixed;
+    width: 18.22rem;
+    // height: 1.12rem;
+    // line-height: 1.12rem;
+    height: .93rem;
+    line-height: .93rem;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    margin-left: -9.11rem;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    .ant-dropdown-menu-item {
+      clear: none;
+      float: left;
+      margin: 0;
+      padding: 0;
+      // 
+      height: .93rem;
+      line-height: .93rem;
+      margin-right: 1.01rem;
+      &:hover {
+        background-color: #eee;
+      }
+      a {
+        display: inline-block;
+        font-size: 14px;
+        color: #1b1b1b;
+        margin: 0;
+        padding: 0;
+        &:hover {
+          color: #d3b078;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+

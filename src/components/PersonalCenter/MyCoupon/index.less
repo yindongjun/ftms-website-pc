@@ -1,0 +1,178 @@
+.handleMyCoupon {
+  margin: 0 auto;
+  width: 15.5rem;
+  >h2 {
+    font-size: .3rem;
+    font-weight: 600;
+    padding-bottom: .4rem;
+    border-bottom: .01rem solid rgba(0, 0, 0, .1);
+    margin-bottom: .6rem;
+  }
+  .MyCouponTitle {
+    height: 0.5rem;
+    line-height: .5rem;
+    margin-bottom: .3rem;
+
+    >a {
+      display: inline-block;
+      text-align: left;
+      font-size: 15px;
+      font-weight: 600;
+      color: #d3b078;
+      float: left;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateY(-50%);
+        position: relative;
+        top: .12rem;
+        left: 0;
+        height: 0.28rem;
+        width: 0.28rem;
+        background-image: url("../../../assets/img/personsenter/return.png");
+        background-size: 100% 100%;
+        margin-right: .1rem;
+      }
+    }
+
+    >span {
+      display: inline-block;
+      float: right;
+      height: 100%;
+      >i {
+        display: inline-block;
+        height: 100%;
+        width: 2.2rem;
+        text-align: center;
+        border: .01rem solid rgba(0, 0, 0, .1);
+        font-size: 15px;
+        color: #000;
+        border-radius: .25rem;
+        font-weight: 600;
+        margin-left: .2rem;
+        cursor: pointer;
+      }
+
+      .sel-coupon-type {
+        border: none;
+        background-color: #d3b078;
+        color: #fff;
+      }
+    }
+  }
+  .CouponList {
+    width: 100%;
+    border: .01rem solid rgba(0, 0, 0, .1);
+    border-top: .03rem solid #d3b078;
+    padding: .52rem .4rem .4rem;
+    display: flex;
+    flex-wrap: wrap;
+    >li {
+      display: flex;
+      align-items: center;
+      height: 1.7rem;
+      width: 4.7rem;
+      background: url('../../../assets/img/personsenter/cardbg.png');
+      background-size: 100% 100%;
+      margin-bottom: .4rem;
+      margin-right: .28rem;
+      position: relative;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      .cardLeft {
+        width: 38%;
+        >h1 {
+          font-size: .4rem;
+          color: #fff;
+          i {
+            font-size: .3rem;
+            color: #fff;
+            vertical-align: super;
+          }
+        }
+        >span {
+          font-size: 13px;
+          color: #fff;
+        }
+      }
+      .cardRight {
+        width: 60%;
+        text-align: left;
+        padding-left: .21rem;
+        >span {
+          display: block;
+          font-size: 13px;
+          >i {
+            font-size: 13px;
+            font-weight: 600;
+          }
+          &:last-of-type {
+            margin-top: .21rem;
+            border-top: .01rem dotted rgba(0, 0, 0, .1);
+            padding-top: .2rem;
+            color: #a0a0a0;
+          }
+        }
+      }
+      .mark {
+        position: absolute;
+        right: .2rem;
+        top: auto;
+        >img {
+          width: 1.55rem;
+        }
+      }
+    }
+    .used,
+    .stale {
+      background: url('../../../assets/img/personsenter/cardbgb.jpg');
+      background-size: 100% 100%;
+    }
+    .ant-pagination {
+      width: 100%;
+      .ant-pagination-item {
+        &:focus,
+        &:hover {
+          border-color: #d3b078;
+
+          a {
+            color: #000;
+          }
+        }
+      }
+
+      .ant-pagination-prev:hover .ant-pagination-item-link,
+      .ant-pagination-next:hover .ant-pagination-item-link {
+        color: #d3b078;
+        border-color: #d3b078;
+      }
+
+      .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon,
+      .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon {
+        color: #d3b078;
+      }
+
+      .ant-pagination-options-quick-jumper input:hover {
+        border-color: #d3b078;
+      }
+
+      .ant-pagination-item-active {
+        background-color: #d3b078;
+        border: none;
+
+        a {
+          color: #fff;
+        }
+
+        &:hover {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

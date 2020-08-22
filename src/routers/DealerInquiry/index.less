@@ -1,0 +1,279 @@
+.handleDealerInquiry {
+  margin: 0.8rem auto 1rem;
+  max-width: 19.2rem;
+  text-align: center;
+  .headerPic {
+    width: 100%;
+    height: 3rem;
+    background: url('../../assets/img/serverhall/dealerInquery.jpg');
+    background-size: 100% 100%;
+    padding-top: 1.2rem;
+    margin-bottom: .8rem;
+    >span {
+      width: 14rem;
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+      text-align: left;
+      >h1 {
+        font-size: .36rem;
+        font-weight: 600;
+        color: #000;
+      }
+      >i {
+        display: block;
+        height: 0.02rem;
+        width: 0.31rem;
+        background-color: #000;
+        margin: .11rem 0;
+      }
+    }
+  }
+  .DealerInquiry {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2.6rem;
+    text-align: left;
+    .ant-input:hover,
+    .ant-input:focus  {
+      border-color: #d3b078;
+      box-shadow: none;
+    }
+    .ant-checkbox-wrapper {
+      margin-right: .52rem;
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #d3b078;
+        border-color: #d3b078;
+      }
+      &:hover .ant-checkbox-inner,
+      .ant-checkbox:hover .ant-checkbox-inner,
+      .ant-checkbox-input:focus+.ant-checkbox-inner {
+        border-color: #d3b078;
+      }
+    }
+    .ant-select-selection:hover, 
+    .ant-select-selection:focus, 
+    .ant-select-selection:active {
+      border-color: #d3b078;
+    }
+    .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+      border-color: #d3b078;
+    }
+    .dealerInfo{
+      >.deacler {
+        // display: inline-block;
+        // margin-bottom: 0.39rem;
+        // font-weight: 700;
+        // font-size: 13px;
+        // display: flex;
+        // align-items: center;
+        display: inline-block;
+        height: 0.9rem;
+        margin-bottom: 0.2rem;
+        line-height: 0.4rem;
+        font-weight: 700;
+        font-size: 13px;
+        > strong {
+          color: burlywood;
+        }
+        > .ant-select {
+          width: 2.2rem;
+          font-weight: normal;
+          margin-right: 0.2rem;
+          font-size: 13px;
+          > .ant-select-selection {
+             box-shadow: none;
+             height: 0.4rem;
+             > .ant-select-selection__rendered{
+                line-height: .4rem;
+             }
+          }
+          > .ant-select-selection:hover {
+            border-color: burlywood;
+          }
+        }
+        > .ant-select-open {
+          border-color: burlywood;
+          .ant-select-selection {
+            border-color: burlywood;
+          }
+        }
+        > .ant-input {
+          // font-weight: normal;
+          // margin-top: 0.03rem;
+          // width: 4rem;
+          // height: 0.4rem;
+          // box-shadow: none;
+          // margin-right: .2rem;
+          font-weight: normal;
+          margin-top: 0.03rem;
+          width: 4rem;
+          box-shadow: none;
+          font-size: 13px;
+          height: 0.4rem;
+        }
+        > .ant-input:focus {
+          border-color: burlywood;
+        }
+        > .ant-input:hover {
+          border-color: burlywood;
+        }
+        > span {
+          float: right;
+          display: inline-block;
+          width: 0.9rem;
+          height: 0.4rem;
+          background-color: burlywood;
+          background-image: url(../../assets/img/carSellHelp/appointmentDrive/搜索.png);
+          background-repeat: no-repeat;
+          background-position: 50%;
+          background-size: 0.2rem;
+          border-radius: 0.05rem;
+          margin: 0 0.4rem;
+          cursor: pointer;
+        }
+         > b {
+           font-size: 13px;
+           font-weight: normal;
+           float: right;
+           > i {
+             color: red;
+           }
+         }
+      }
+      > .mapInfo {
+        height: 4.71rem;
+        // border-bottom: 0.01rem solid rgb(214, 214, 214);
+        padding-bottom: 0.4rem;
+        margin-bottom: 0.4rem;
+        > ul {
+          width: 4.7rem;
+          height: 100%;
+          overflow: auto;
+          padding-right: 0.2rem;
+          display: inline-block;
+          > a {
+            > li {
+              width: 100%;
+              height: 0.8rem;
+              border-bottom: 0.01rem solid rgba(0, 0, 0, .1);
+              overflow: hidden;
+              padding-top: 0.18rem;
+              transition: 0.3s;
+              &:first-of-type {
+                border-top: 0.01rem solid rgba(0, 0, 0, .1);
+              }
+              > h5 {
+                height: 0.49rem;
+                font-size: 13px;
+                font-weight: 700;
+                width: 4rem;
+                position: relative;
+                margin-bottom: 0.3rem;
+                > span {
+                  display: inline-block;
+                  float: left;
+                  width: 0.22rem;
+                  height: 0.30rem;
+                  //line-height: .25rem;
+                  // border-radius: 0.02rem;
+                  background-image: url('../../assets/img/carSellHelp/appointmentDrive/定位.png');
+                  background-size: 100% 100%;
+                  vertical-align: 0.03rem;
+                  font-size: 0.12rem;
+                  //padding-left: 0.03rem;
+                  text-align: center;
+                  color: #fff;
+                  margin-right: 0.2rem;
+                }
+                > b {
+                  float: right;
+                }
+              }
+              > p {
+                font-size: 13px;
+                text-align: center;
+              }
+            }
+          }
+          > a {
+            > .open_li {
+              width: 100%;
+              height: 3.2rem;
+              border-bottom: 0.01rem solid rgba(0, 0, 0,.1);
+              overflow: hidden;
+              // padding-bottom: 0.3rem;
+              transition: 0.3s;
+              box-sizing: content-box;
+              > h5 {
+                height: 0.49rem;
+                font-size: 13px;
+                width: 4rem;
+                font-weight: 700;
+                position: relative;
+                > span {
+                  display: inline-block;
+                  float: left;
+                  width: 0.2rem;
+                  height: 100%;
+                  border-radius: 0.02rem;
+                  background-image: url('../../assets/img/carSellHelp/downloadCenter/选中的副本.png');
+                  background-repeat: no-repeat;
+                  background-size: 100% 45%;
+                  vertical-align: -0.05rem;
+                  color: #fff;
+                  margin-right: 0.2rem;
+                }
+                > b {
+                  float: right;
+                }
+              }
+              > p {
+                font-size: 13px;
+                text-align: left;
+                margin-left: 0.43rem;
+              }
+              .appdrive {
+                display: inline-block;
+                height: 0.5rem;
+                line-height: .5rem;
+                text-align: center;
+                width: 2.2rem;
+                background-color: #d3b078;
+                border-radius: .25rem;
+                color: #fff;
+                font-size: .2rem;
+                font-weight: 600;
+                margin: 0.3rem 0 .3rem .43rem;
+                &::before {
+                  content: '';
+                  display: inline-block;
+                  vertical-align: middle;
+                  transform: translateY(-50%);
+                  height: 0.18rem;
+                  width: 0.18rem;
+                  margin-top: 0.15rem;
+                  margin-right: 0.1rem;
+                  background-image: url("../../assets/img/sidebar/book.png");
+                  background-size: 100% 100%;
+                }
+              }
+            }
+          }
+        }
+        > .map {
+          float: right;
+          height: 4.31rem;
+          background: burlywood;
+          width: 9.22rem;
+          position: relative;
+          .BMap_bubble_content {
+            padding: 0 10px;
+            width: 250px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}

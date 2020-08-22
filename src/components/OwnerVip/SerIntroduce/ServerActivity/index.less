@@ -1,0 +1,108 @@
+.handleServerActivity {
+  width: 14rem;
+  margin: 0 auto;
+  padding-top: .8rem;
+  .ServerActivityTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .81rem;
+    >span {
+      display: inline-block;
+      width: 6.8rem;
+      position: relative;
+      top: 0;
+      left: 0;
+      text-align: left;
+      img {
+        width: 100%;
+        display: block;
+        margin-bottom: .35rem;
+      }
+      h1 {
+        font-size: .2rem;
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+      a {
+        display: inline-block;
+        height: 0.43rem;
+        line-height: .43rem;
+        width: 1.31rem;
+        text-align: center;
+        border-radius: .22rem;
+        border: .01rem solid #000;
+        position: absolute;
+        right: 0;
+        top: 3.93rem;
+        font-size: 13px;
+        font-weight: 600;
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          height: 0.14rem;
+          width: 0.14rem;
+          margin-top: 0.11rem;
+          margin-right: .08rem;
+          background-image: url("../../../../assets/img/serviceIntroduce/lookicon.png");
+          background-size: 100% 100%;
+        }
+        &:hover {
+          background-color: #d3b078;
+          border: none;
+          color: #fff;
+          &::before {
+            background-image: url("../../../../assets/img/purebrand/white.png");
+            background-size: 100% 100%;
+          }
+        }
+      }
+      i {
+        display: inline-block;
+        height: 0.02rem;
+        width: 0.17rem;
+        background-color: #666;
+        margin: .19rem 0 .16rem;
+      }
+      p {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+  .ServerActivityBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >span {
+      display: inline-block;
+      text-align: left;
+      width: 3.2rem;
+      img {
+        width: 100%;
+        display: block;
+        margin-bottom: .35rem;
+      }
+      h1 {
+        font-size: .2rem;
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+      i {
+        display: inline-block;
+        height: 0.02rem;
+        width: 0.17rem;
+        background-color: #666;
+        margin: .19rem 0 .16rem;
+      }
+      p {
+        font-size: 14px;
+        color: #666;
+        &:first-of-type {
+          margin-bottom: .35rem;
+        }
+      }
+    }
+  }
+}

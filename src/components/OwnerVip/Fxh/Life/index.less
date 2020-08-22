@@ -1,0 +1,416 @@
+.handleLife {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  h2 {
+    width: 14rem;
+    margin: 0 auto;
+    font-size: .3rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding-bottom: .4rem;
+    padding-top: 1rem;
+    border-bottom: .01rem solid rgba(51, 51, 51, .18);
+  }
+  .spec {
+    border: none;
+    padding-bottom: 0;
+  }
+  .pad_t_0 {
+    padding-top: 0;
+  }
+  .carhostvip {
+    width: 14rem;
+    margin: 0 auto;
+    .videoPlay{
+      height: 5rem;
+      width: 100%;
+      margin-top: .6rem;
+      margin-bottom: .81rem;
+      position: relative;
+      cursor: pointer;
+      >img {
+        display: block;
+        &:first-child {
+          width: 100%;
+          height:100%;
+        }
+        &:last-child {
+          position: absolute;
+          height: 0.56rem;
+          width: 0.56rem;
+          top: 50%;
+          margin-top: -.28rem;
+          left: 50%;
+          margin-left: -.28rem;
+        }
+      }
+      video {
+        height: 100%;
+        width: 100%;
+      }
+      iframe{
+        height: 100%;
+        width: 100%;
+      }
+    } 
+  }
+  .vipgrand {
+    width: 100%;
+    padding-top: .83rem;
+    background-color: #f6f6f6;
+    padding-bottom: .9rem;
+    >h2 {
+      width: 14rem;
+    }
+    .vipgrand-content {
+      margin: .75rem auto 0;
+      width: 14rem;
+      .grandHeader {
+        // text-align: left;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        min-height: 4.8rem;
+        .grandHeaderLeft {
+          display: inline-block;
+          width: 5.65rem;
+          margin-right: 1.07rem;
+          // vertical-align: bottom;
+          img {
+            width: 100%;
+            margin-bottom: .19rem;
+          }
+          h3 {
+            font-size: 15px;
+            color: #000;
+            font-weight: 600;
+          }
+        }
+        .grandHeaderRight {
+          display: inline-block;
+          vertical-align: top;
+          text-align: left;
+          p {
+            font-size: 13px;
+            color: #313131;
+          }
+          >.title {
+            margin-bottom: .39rem;
+          }
+          >span {
+            i {
+              font-size: 13px;
+              color: #313131;
+              float: left;
+            }
+            >div {
+              display: inline-block;
+              margin-bottom: .39rem;
+            }
+          }
+        }
+        
+      } 
+      .grandMiddle {
+        width: 14rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.05rem;
+        li {
+          padding-bottom: .06rem;
+          margin-left: 1.29rem;
+          cursor: pointer;
+          img {
+            height: 0.31rem;
+          }
+          span {
+            font-size: 13px;
+            color: #b0b1bf;
+            display: block;
+          }
+          &:first-of-type {
+            margin-left: 0;
+          }
+          
+        }
+        .sel-cardType {
+          border-bottom: .02rem solid #d3b078;
+        }
+      }
+    }
+  }
+  .integral {
+    width: 14rem;
+    display: flex;
+    justify-content: space-between;
+    margin: .8rem auto .78rem;
+    li {
+      height: 0.5rem;
+      line-height: .5rem;
+      width: 2.2rem;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      border: .01rem solid #000;
+      border-radius: .25rem;
+      cursor: pointer;
+    }
+  }
+  .newActivity {
+    width: 100%;
+    background: #f7f7f7;
+    margin: 0 auto;
+    padding-bottom: .79rem;
+    .activityContent {
+      width: 14rem;
+      margin: .59rem auto 0;
+      margin-top: .4rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap:wrap;
+      >span {
+        width:6.8rem;
+        height:5.2rem;
+        text-align: left;
+        position: relative;
+        margin-bottom:.15rem;
+        img {
+          width: 100%;
+          display: block;
+          height:4rem;
+          cursor: pointer;
+        }
+        h3 {
+          font-size: .24rem;
+          font-weight: 600;
+          margin-top: .3rem;
+          cursor: pointer;
+        }
+        i {
+          position: absolute;
+          left:0;
+          bottom:0;
+          font-size: 13px;
+          color: #999;
+          &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            height: 0.14rem;
+            width: 0.14rem;
+            margin-top: 0.1rem;
+            margin-right: .08rem;
+            background-image: url("../../../../assets/img/fxh/date.png");
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+  .scoreShop {
+    width: 100%;
+    background:#fff;
+    padding-bottom: .79rem;
+    .scoreContent {
+      width: 14rem;
+      margin: .4rem auto 0;
+      display: flex;
+      p {
+        flex:1;
+        width:3.25rem;
+        height:243px;
+        line-height: .2rem;
+        text-align: left;
+        span {
+          display: block;
+          line-height: .3rem;
+        }
+        i {
+          display: inline-block;
+          width: .36rem;
+        }
+        &:nth-child(1) {
+          // background: red;
+          width: 6.27rem;
+          height: 4.78rem;
+          margin-bottom: .2rem;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &:nth-child(2) {
+          padding-left:1rem;
+          padding-top: 1.32rem;
+          span {
+            font-family: PingFangSC-Regular, sans-serif;
+            font-size: 15px;
+            color: #000;
+            line-height: .34rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .ownerStory {
+    width: 100%;
+    background: #f7f7f7;
+    margin: 0 auto;
+    padding-bottom: .79rem;
+    .storyContent {
+      width: 14rem;
+      margin: .59rem auto 0;
+      margin-top: .4rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap:wrap;
+      >span {
+        width:6.8rem;
+        height:5.2rem;
+        text-align: left;
+        position: relative;
+        margin-bottom:.15rem;
+        img {
+          width: 100%;
+          display: block;
+          height:4rem;
+          cursor: pointer;
+        }
+        h3 {
+          font-size: .24rem;
+          font-weight: 600;
+          margin-top: .3rem;
+          cursor: pointer;
+        }
+        i {
+          position: absolute;
+          left:0;
+          bottom:0;
+          font-size: 13px;
+          color: #999;
+          &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            height: 0.14rem;
+            width: 0.14rem;
+            margin-top: 0.1rem;
+            margin-right: .08rem;
+            background-image: url("../../../../assets/img/fxh/date.png");
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+  .returnActivity  {
+    width: 14rem;
+    margin: 0 auto;
+    .activityNav {
+      margin-top: .4rem;
+      display: flex;
+      justify-content:flex-start;
+      flex-wrap: wrap;
+      margin-bottom: .61rem;
+      li {
+        width: 3.27rem;
+        padding:0.12rem;
+        text-align: left;
+        margin-right:.3rem;
+        position: relative;
+        &:nth-child(4n){
+          margin-right: 0;
+        }
+        &:hover {
+          box-shadow: #eee 0.01rem 0.01rem 0.05rem 0.05rem;
+        }
+        img {
+          width: 100%;
+          height:1.95rem;
+          display: block;
+          cursor: pointer;
+        }
+        h3 {
+          cursor: pointer;
+          font-size: 13px;
+          font-weight: 600;
+          margin-top: .17rem;
+          margin-bottom:.25rem;
+        }
+        i {
+          font-size: 13px;
+          color: #999;
+          position: absolute;
+          left: 0.12rem;
+          bottom:.12rem;
+          &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            height: 0.14rem;
+            width: 0.14rem;
+            margin-top: 0.1rem;
+            margin-right: .08rem;
+            background-image: url("../../../../assets/img/fxh/date.png");
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+    .watchmore {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #999;
+      cursor: pointer;
+      .anticon {
+        display: block;
+      }
+    }
+  }
+}
+.fxhMedal {
+  .ant-modal {
+    width: 3rem!important;
+    .ant-modal-content {
+      .ant-modal-close {
+        right: -.1rem;
+        top: -.1rem;
+        .ant-modal-close-x {
+          width: 0.3rem;
+          height: 0.3rem;
+          line-height: .3rem;
+          text-align: center;
+          font-size: 13px;
+          border-radius: 50%;
+          background-color: #d3b078;
+          color: #fff;
+        }
+      }
+      .ant-modal-header {
+        display: none;
+      }
+      .ant-modal-body {
+        text-align: center;
+        padding: .3rem;
+        img {
+          width: 100%;
+          display: block;
+          margin-bottom: .2rem;
+        }
+        p {
+          width: 100%;
+          text-align: center;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+

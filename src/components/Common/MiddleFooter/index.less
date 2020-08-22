@@ -1,0 +1,89 @@
+.activ-area {
+  padding-top: .69rem;
+  width: 18.2rem;
+  margin: 0 auto;
+  margin-bottom: .7rem;
+  border-top: .01rem solid rgba(51, 51, 51, .18);
+  ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >li {
+      position: relative;
+      transition: all 2s;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      a {
+        display: inline-block;
+        position: relative;
+        height: 0.44rem;
+        width: 1.87rem;
+        background-color: rgba(255,255,255, .6);
+        border-radius: .22rem;
+        line-height: .44rem;
+        text-align: center;
+        font-size: 15px;
+        left: 50%;
+        margin-left: -.93rem;
+        z-index:998;
+      }
+
+      &:first-child,
+      &:nth-of-type(2) {
+        height: 4.5rem;
+        width: 9.08rem;
+        background: url('../../../assets/img/footer/3DNumShow.png');
+        background-size: 100% 100%;
+        margin-bottom: .05rem;
+        a {
+          top: 3.7rem;
+          z-index: 998;
+        }
+      }
+      &:nth-of-type(2) {
+        margin: 0;
+        // background: url('../../../assets/img/footer/secondCar.png');
+        background-size: 100% 100%;
+      }
+      &:nth-of-type(3),
+      &:nth-of-type(4),
+      &:last-child {
+        height: 4.2rem;
+        width: 6.04rem;
+        // background: url('../../../assets/img/footer/fxh.png');
+        background-size: 100% 100%;
+        a {
+          top: 3.4rem;
+        }
+      }
+      &:nth-of-type(4) {
+        // background: url('../../../assets/img/footer/store.png');
+        background-size: 100% 100%;
+      }
+      &:last-child {
+        margin: 0;
+        // background: url('../../../assets/img/footer/idea.png');
+        background-size: 100% 100%;
+      }
+      &:hover {
+        background-size: 110% 110%;
+        a {
+          background-color: #d3b078;
+          color: #fff;
+        }
+        .black{
+          position: absolute;
+          left:0;
+          top:0;
+          width: 100%;
+          height:100%;
+          background: rgba(0,0,0,.2);
+          // opacity: 0.2;
+          transition: all .7s;
+        }
+      }
+    }
+  }
+}

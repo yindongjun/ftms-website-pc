@@ -1,0 +1,79 @@
+.RegisterBox {
+  //height: 7.52rem; // 高度自适应
+  width: 5.42rem;
+  background-color: #fff;
+  position: absolute;
+  top: 0.48rem;
+  right: 1.83rem;
+  text-align: center;
+  padding: .4rem 0.65rem .41rem .65rem;
+  box-sizing: border-box;
+  .MobileCodeBox {
+    .sendBtn {
+      pointer-events: none;
+      background-color: rgba(153, 153, 153, .2);
+    }
+    .canSendBtn {
+      color: #fff !important;
+      background-color: #d3b078;
+    }
+  }
+  .userProtocol {
+    .ant-checkbox-wrapper {
+      margin-right: .05rem;
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #d3b078;
+        border-color: #d3b078;
+      }
+
+      &:hover {
+        .ant-checkbox-input {
+          border-color: #d3b078;
+        }
+      }
+    }
+
+    .ProtocolBtn {
+      display: inline-block;
+      font-size: 13px;
+      margin-bottom: .29rem;
+      transition: all 2s;
+
+      button {
+        border: none;
+        outline: medium;
+        background-color: #fff;
+        padding: 0;
+        cursor: pointer;
+        color: #1b1b1b;
+
+        &:hover {
+          color: #d3b078;
+        }
+      }
+    }
+  }
+
+  .register-btn {
+    display: inline-block;
+    height: 0.5rem;
+    width: 4.1rem;
+    background-color: #d3b078;
+    border-radius: .25rem;
+    margin-bottom: .29rem;
+    line-height: .5rem;
+    font-size: .24rem;
+    color: #fff;
+    letter-spacing: .08rem;
+    cursor: pointer;
+  }
+
+  .login-warning {
+    font-size: 13px;
+    color: #999;
+
+    a {
+      color: #d3b078;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.handlePureBrand {
+  margin: 0 auto 1rem;
+  .PureBrand {
+    max-width: 19.2rem;
+    margin-top: .8rem;
+    .topBanner{
+      position: relative;
+      .headImg {
+        display: block;
+        width: 100%;
+      }
+      .tit{
+        position: absolute;
+        top: 40%;
+        left: 13.5%;
+        font-size: .36rem;
+        letter-spacing: 2.5px;
+        font-weight: 600;
+        color: #000;
+      }
+      .underLine{
+        position: absolute;
+        top: 61%;
+        left: 13.5%;
+        display: inline-block;
+        width: 0.36rem;
+        height: 0.03rem;
+        background-color: #000;
+      }
+    }
+    >div {
+      width: 100%;
+      .NavList {
+        width: 100%;
+        display: flex;
+        height: 0.8rem;
+        line-height: .8rem;
+        margin-bottom: .8rem;
+        background-color: #eee;
+        
+        >a {
+          display: inline-block;
+          width: 4.8rem;
+          text-align: center;
+          border-right: .01rem solid #fff;
+          >li {
+            font-size: 15px;
+            font-weight: 600;
+            &:hover {
+              color: #d3b078;
+            }
+          }
+          &:hover {
+            background-color: #d3b078;
+            text-decoration: none;
+            >li {
+              color: #fff;
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+          &:last-of-type {
+            border: none;
+          }
+        }
+        .selected {
+          background-color: #d3b078;
+          text-decoration: none;
+          >li {
+            color: #fff;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .serverhallContent {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

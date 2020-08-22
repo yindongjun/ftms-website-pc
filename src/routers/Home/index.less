@@ -1,0 +1,201 @@
+.handleOfficialSite {
+  width: 100%;
+  max-width: 19.2rem;
+  margin: 0 auto;
+  position: relative;
+  > .lucky {
+    position: fixed;
+    z-index: 1000;
+    bottom: 2.2rem;
+    right: 0.01rem;
+    a {
+      .luckyImg{
+        width: 1.55rem;
+        height: 1.19rem;
+        background-image: url("../../assets/img/footer/lucky.png");
+        background-size: 100% 100%;
+        &:hover {
+          background-image: url("../../assets/img/footer/lucky-on.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+    //img {
+    //  width: 1.6rem;
+    //}
+  }
+  .slide-img {
+    width: 18.2rem;
+    margin: 0 auto;
+    position: relative;
+    top: .8rem;
+    margin-bottom: .7rem;
+    .ant-carousel {
+      width: 100%;
+      padding-bottom: .84rem;
+      // border-bottom: .01rem solid rgba(0, 0, 0, .2);
+      .slick-slide {
+        text-align: center;
+        height: 8.94rem;
+        line-height: 8.94rem;
+        background: #364d79;
+        overflow: hidden;
+        img {
+          height: 8.95rem;
+        }
+      }
+      .slick-dots {
+        width: 0.09rem;
+        height: 1rem;
+        top: 50%;
+        margin-top: -.5rem;
+        right: .35rem;
+        
+        li {
+          position: static;
+          display: block;
+          margin: 0;
+          margin-bottom: .24rem;
+          button {
+            height: 0.09rem;
+            width: 0.09rem;
+            border-radius: .05rem;
+            border: .01rem solid #fff;
+            background-color: rgba(0, 0, 0, 0);
+            opacity: 1;
+          }
+        }
+        .slick-active {
+          button {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .silde-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 11.7rem;
+    height: 0.6rem;
+    line-height: .6rem;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: .3rem;
+    position: absolute;
+    bottom: 1.21rem;
+    left: 50%;
+    margin-left: -5.85rem;
+    li {
+      cursor: pointer;
+      font-size: 15px;
+      width: 2.93rem;
+      height: 100%;
+      text-align: center;
+      span {
+        display: inline-block;
+        height: 0.32rem;
+        width: 100%;
+        line-height: .32rem;
+        border-left: .01rem solid #666!important;
+      }
+      //&:last-child {
+      //  span {
+      //    border-right: none!important;
+      //    &:last-of-type {
+      //      display: none;
+      //    }
+      //  }
+      //}
+      &:first-child {
+        span {
+          border-left: none!important;
+        }
+      }
+      .special1 {
+        &:last-of-type {
+          display: none;
+        }
+      }
+      
+      &:hover {
+        background-color: #d3b078;
+        transition: all .6s;
+        span {
+          border-left: none!important;
+        }
+        + li {
+          span {
+            border-left: none!important;
+          }
+        }
+        &:first-child {
+          border-top-left-radius: .3rem;
+          border-bottom-left-radius: .3rem;
+        }
+        //&:last-child {
+        //  border-top-right-radius: .3rem;
+        //  border-bottom-right-radius: .3rem;
+        //  >span {
+        //    &:first-of-type {
+        //      display: none;
+        //    }
+        //    &:last-of-type {
+        //      display: inline-block;
+        //    }
+        //  }
+        //}
+        &:last-child {
+          border-top-right-radius: .3rem;
+          border-bottom-right-radius: .3rem;
+        }
+        .special1 {
+          &:first-of-type {
+            display: none;
+          }
+          &:last-of-type {
+            display: inline-block;
+          }
+        }
+        span {
+          color: #fff;
+        }
+      }
+      //&:last-child:hover {
+      //  background-color: rgba(255, 255, 255, .9);
+      //  span {
+      //    color: #000;
+      //  }
+      //}
+
+    }
+  }
+  
+
+  .zBox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 19999;
+  }
+  #lucky {
+    width: 1.55rem;
+    height: 1.19rem;
+    // background: red;
+    position: fixed;
+    bottom: 2.2rem;
+    right: 0.01rem;
+    z-index: 20070;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
+  width: 100%;
+  max-width: 19.2rem;
+  margin: 0 auto;
+  position: relative;
+  
+
+}

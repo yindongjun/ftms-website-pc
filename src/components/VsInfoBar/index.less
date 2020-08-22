@@ -1,0 +1,132 @@
+.vsInfoBar {
+  width: 3.6rem;
+  height: 7rem;
+  position: fixed;
+  top: 0.85rem;
+  right: -3.6rem;
+  z-index: 1000;
+  transition: 0.5s;
+  border-top: 0.05rem solid rgb(211, 176, 120);
+  background: #fff;
+  > h2 {
+    font-size: 0.24rem;
+    height: 0.85rem;
+    line-height: 0.85rem;
+    border-bottom: 0.01rem solid rgb(214, 214, 214);
+    text-align: center;
+  }
+  > ul {
+    width: 3.6rem;
+    min-height: 0.75rem;
+    max-height: 4.5rem;
+    overflow: auto;
+    padding: 0 0.2rem;
+    > li {
+      height: 0.75rem;
+      border-bottom: 0.01rem solid rgb(214, 214, 214);
+      padding: 0.1rem 0;
+      position: relative;
+      > b {
+        font-size: 13px;
+        display: block;
+        margin-bottom: 0.05rem;
+      }
+      > span {
+        font-size: 15px;
+        display: block;
+        width: 2.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      > i {
+        position: absolute;
+        top: 0.3rem;
+        right: 0.15rem;
+        cursor: pointer;
+      }
+    }
+  }
+  > p {
+    height: 0.7rem;
+    font-size: 13px;
+    line-height: 0.7rem;
+    text-align: left;
+    text-indent: 0.2rem;
+    color: rgb(214, 214, 214);
+    > span {
+      float: right;
+      margin-right: 0.3rem;
+      color: rgb(211, 176, 120);
+      cursor: pointer;
+      > i {
+        display: inline-block;
+        width: 0.15rem;
+        height: 0.15rem;
+        vertical-align: -0.03rem;
+        background-image: url('../../assets/img/carBrandModels/empty.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+  > .VS {
+    width: 3.2rem;
+    height: 0.45rem;
+    background: rgb(211, 176, 120);
+    text-align: center;
+    font-size: 13px;
+    line-height: 0.45rem;
+    border-radius: 0.22rem;
+    color: #fff;
+    margin-left: 0.2rem;
+    cursor: pointer;
+  }
+  > .vsBtn {
+    cursor: pointer;
+    width: 0.44rem;
+    height: auto;
+    background: rgb(102, 102, 102);
+    position: absolute;
+    top: 0.3rem;
+    left: -0.44rem;
+    border-radius: 0.1rem 0 0 0.1rem;
+    padding-top: 0.15rem;
+    font-size:14px;
+    > i {
+      display: block;
+      width: 0.2rem;
+      height: 0.2rem;
+      background-image: url('../../assets/img/carBrandModels/对比的副本.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-left: 0.14rem;
+      margin-bottom: 0.1rem;
+    }
+    > p {
+      color: #fff;
+      width: 0.2rem;
+      margin-left: 0.14rem;
+      margin-bottom: 0.1rem;
+    }
+    > span {
+      display: block;
+      width: 0.44rem;
+      height: 0.43rem;
+      border-top: 0.01rem solid rgb(214, 214, 214);
+      border-radius: 0 0 0 0.1rem;
+      // background-image: url('../../assets/img/carBrandModels/展开的副本.png');
+      // background-repeat: no-repeat;
+      // background-size: 0.05rem;
+      // background-position: 0.2rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+.active {
+  box-shadow: 1px 2px 3px 4px rgba(172, 169, 169, 0.5);
+  transition: 0.5s;
+  right: 0;
+}

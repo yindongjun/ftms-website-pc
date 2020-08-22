@@ -1,0 +1,178 @@
+.official-footer {
+  max-width: 19.2rem;
+  margin: 0 auto;
+  background-color: #242424;
+  padding-bottom: .47rem;
+  .footerNavbar {
+    display: flex;
+    flex-direction: row;
+    align-content:center;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    padding-bottom: .41rem;
+    padding: .85rem 0 .41rem;
+    margin-top: 0.8rem;
+    border-bottom: .01rem solid rgba(255, 255, 255, .2);
+    >li{
+      border-right: .01rem solid rgba(255, 255, 255, .2);
+      &:first-child {
+        height: 0.92rem;
+        line-height: .92rem;
+        margin-right: .4rem;
+        .footerNav-Left {
+          display: flex;
+          justify-content: space-between;
+          li {
+            font-size: 13px;
+            color: #fff;
+            margin-right: .49rem;
+            &:last-child {
+              margin-right: .4rem;
+            }
+            &:hover {
+              color: #d3b078;
+            }
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        padding-right: .43rem;
+        height: 0.92rem;
+        display: flex;
+        align-items: center;
+        img {
+          float: left;
+          margin-right: .29rem;
+          height: 0.65rem;
+        }
+        .num {
+          display: inline-block;
+          p {
+            span {
+              font-size: 15px;
+              color: rgba(255, 255, 255, .8);
+            }
+            i {
+              font-size: 13px;
+              color: rgba(255, 255, 255, .5);
+            }
+            &:first-child {
+              margin-bottom: .05rem;
+            }
+          }
+        }
+      }
+      &:last-child {
+        border: none;
+        height: 0.92rem;
+        line-height: 0.92rem;
+        .footer-icon {
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          li {
+            float: left;
+            margin-right: .34rem;
+            display: flex;
+            cursor: pointer;
+            img {
+              // margin-top: .08rem;
+              height: 0.48rem;
+              &:last-child {
+                display: none;
+              }
+            }
+            &:first-child {
+              margin-left: .4rem;
+            }
+            &:last-child {
+              margin: 0;
+            }
+            &:hover {
+              img:first-child {
+                display: none;
+              }
+              img:last-child {
+                display: block;
+              }
+            }
+            &:nth-of-type(5),
+            &:nth-of-type(6),
+            &:last-child {
+              position: relative;
+              top: 0;
+              left: 0;
+              &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                transform: translateY(-50%);
+                height: 1.66rem;
+                width: 1.49rem;
+                position: absolute;
+                background-image: url('../../../assets/img/footer/weixincode.png');
+                background-size: 100% 100%;
+                top: -1.75rem;
+                left: -.5rem;
+                transform: scale(0);
+                transition: all 0.5s;
+              }
+              &:hover {
+                &::before {
+                  transform: scale(1);
+                }
+              }
+            }
+            &:nth-of-type(6) {
+              &::before {
+                background-image: url('../../../assets/img/footer/xcxcode.png');
+                background-size: 100% 100%;
+              }
+            }
+            &:last-child {
+              &::before {
+                background-image: url('../../../assets/img/footer/appcode.jpg');
+                background-size: 100% 100%;
+                top: -1.7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .company-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: .27rem;
+    padding-bottom: .29rem;
+    a {
+      color: rgba(255, 255, 255, .5);
+      font-size: 13px;
+      margin-right: .32rem;
+      border-right: .01rem solid rgba(255, 255, 255, .2);
+      padding-right: .32rem;
+    }
+    a:first-child {
+      margin-left: 0;
+    }
+    a:last-child {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .copyright {
+    text-align: center;
+    p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, .5);
+      &:first-child {
+        margin-bottom: .1rem;
+      }
+    }
+  }
+}

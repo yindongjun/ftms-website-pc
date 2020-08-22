@@ -1,0 +1,172 @@
+
+.LoginBox {
+  width: 5.42rem;
+  //height: 5.57rem; // 高度自适应
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -2.78rem;
+  right: 1.83rem;
+  text-align: center;
+  padding: .4rem 0.6rem .41rem .6rem;
+  h2 {
+    font-size: .24rem;
+    color: #1b1b1b;
+    margin-bottom: .3rem;
+    font-weight: 600;
+    letter-spacing: .08rem;
+  }
+  .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+    line-height: 2;
+    background: none;
+    border: 0;
+  }
+  .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-ink-bar{
+    visibility: visible;
+  }
+  .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container{
+    height: auto;
+  }
+  .ant-tabs {
+    .ant-tabs-bar {
+      border: none;
+      .ant-tabs-nav-container {
+        >span {
+          display: none;
+        }
+      }
+      .ant-tabs-nav {
+        >div {
+          display: flex;
+          justify-content: space-around;
+        }
+        .ant-tabs-tab {
+          padding: 0 0 .2rem;
+          font-size: 15px;
+          color: #1b1b1b;
+          letter-spacing: .05rem;
+          margin-right: 1.2rem;
+          font-weight: 600;
+          &:hover {
+            color: #d3b078;
+          }
+          &:last-of-type {
+            margin: 0;
+          }
+        }
+        // .ant-tabs-tab-active {
+        //   color: #d3b078;
+        // }
+        .ant-tabs-ink-bar-animated {
+          background-color: #d3b078!important;
+          width: .9rem!important;
+        }
+      }
+    }
+    .ant-tabs-top-content.ant-tabs-content-no-animated {
+      transition: none;
+      .QuickLoginBox,
+      .AccountLoginBox {
+        .forgetPwd {
+          display: inline-block;
+          font-size: 13px;
+          color: #d3b078;
+          margin-bottom: .29rem;
+          cursor: pointer;
+        }
+        .register-warning {
+          font-size: 13px;
+          color: #999;
+          a {
+            color: #d3b078;
+          }
+        }
+      }
+      .QuickLoginBox {
+        .MobileCodeBox {
+          margin-bottom: .43rem;
+          .sendBtn {
+            pointer-events: none;
+            background-color: rgba(153, 153, 153, .2);
+          }
+          .canSendBtn {
+            color: #fff;
+            background-color: #d3b078;
+          }
+        }
+      }
+      .AccountLoginBox {
+        .settingPwdBox {
+          margin-bottom: .43rem;
+        }
+      }
+    }
+  }
+  .tabsBox {
+    //font-size: 14px;//ie显示框展示有问题注掉
+    margin-bottom: .6rem;
+  }
+  .tabsBox>.tabsBox1,.tabsBox>.tabsBox2 {
+    .forgetPwd {
+      display: inline-block;
+      font-size: 13px;
+      color: #d3b078;
+      margin-bottom: .29rem;
+      cursor: pointer;
+    }
+    .register-warning {
+      font-size: 13px;
+      color: #999;
+      a {
+        color: #d3b078;
+      }
+    }
+  }
+  .tabsBox>.tabsBox1 {
+    .MobileCodeBox {
+      margin-bottom: .43rem;
+      .sendBtn {
+        pointer-events: none;
+        background-color: rgba(153, 153, 153, .2);
+      }
+      .canSendBtn {
+        color: #fff;
+        background-color: #d3b078;
+      }
+    }
+  }
+  .tabsBox>.tabsBox2 {
+    .settingPwdBox {
+      margin-bottom: .43rem;
+    }
+  }
+
+  .fc_footer {
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .2rem .4rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid #d3b078;
+      span {
+        &:nth-child(1) {
+          width: auto;
+          color: #999;
+          font-size: 13px;
+          line-height: .4rem;
+        }
+        display: inline-block;
+        width: .4rem;
+        height: .4rem;
+        magin-right: .47rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

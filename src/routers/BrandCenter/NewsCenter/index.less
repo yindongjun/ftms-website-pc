@@ -1,0 +1,162 @@
+.handleNewsCenter {
+  margin: 0 auto 1rem;
+  .NewsCenter {
+    max-width: 19.2rem;
+    margin-top: .8rem;
+    .headerPic {
+      width: 100%;
+      height: 3rem;
+      background: url('../../../assets/img/brandcenter/newscenter/banner.png');
+      background-size: 100% 100%;
+      padding-top: 1.2rem;
+      >span {
+        width: 14rem;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        >h1 {
+          font-size: .36rem;
+          font-weight: 600;
+          color: #000;
+        }
+        >i {
+          display: block;
+          height: 0.03rem;
+          width: 0.36rem;
+          background-color: #000;
+          margin: .15rem 0;
+        }
+      }
+    }
+    .newscontents {
+      width: 14.64rem;
+      margin: .8rem auto 0;
+      text-align: center;
+
+      h2 {
+        font-size: .3rem;
+        font-weight: 600;
+        padding-bottom: .4rem;
+        border-bottom: .01rem solid rgba(51, 51, 51, .18);
+        margin-bottom: .61rem;
+      }
+
+      .newslist {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        >a {
+          display: inline-block;
+          width: 4.88rem;
+          >li {
+            width: 100%;
+            text-align: left;
+            padding: .4rem 0.32rem;
+  
+            h1 {
+              font-size: .22rem;
+              font-weight: 600;
+              color: #000;
+              margin-bottom: .2rem;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+  
+            i {
+              display: block;
+              font-size: 13px;
+              color: #999;
+              margin-bottom: .35rem;
+  
+              &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                transform: translateY(-50%);
+                height: 0.14rem;
+                width: 0.14rem;
+                margin-top: 0.135rem;
+                margin-right: .08rem;
+                background-image: url("../../../assets/img/fxh/date.png");
+                background-size: 100% 100%;
+              }
+            }
+  
+            p {
+              font-size: 14px;
+              color: #999;
+              line-height: .3rem;
+              height: .38rem;
+            }
+  
+            >span {
+              display: inline-block;
+              margin-top: .4rem;
+              height: 0.4rem;
+              line-height: .4rem;
+              width: 1.3rem;
+              text-align: center;
+              border-radius: .22rem;
+              border: .01rem solid #000;
+              font-size: 13px;
+              color: #191919;
+  
+              &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                transform: translateY(-50%);
+                height: 0.14rem;
+                width: 0.14rem;
+                margin-top: 0.13rem;
+                margin-right: .09rem;
+                background-image: url("../../../assets/img/brandcenter/newscenter/swicon.png");
+                background-size: 100% 100%;
+              }
+            }
+  
+            &:hover {
+              box-shadow: rgba(51, 51, 51, .18) 0.01rem 0.01rem 0.1rem 0.02rem;
+  
+              h1 {
+                color: #d3b078;
+              }
+  
+              span {
+                background-color: #d3b078;
+                border: none;
+                color: #fff;
+  
+                &::before {
+                  background-image: url("../../../assets/img/purebrand/white.png");
+                  background-size: 100% 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .watchmore {
+        display: block;
+        font-size: 13px;
+        color: #999;
+        cursor: pointer;
+        &::after {
+          content: '';
+          display: block;
+          vertical-align: middle;
+          transform: translateY(-50%);
+          height: 0.12rem;
+          width: 0.13rem;
+          margin: .15rem auto;
+          background-image: url("../../../assets/img/brandcenter//newscenter/moreicon.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}

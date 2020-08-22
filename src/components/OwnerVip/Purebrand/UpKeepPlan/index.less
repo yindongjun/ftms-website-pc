@@ -1,0 +1,352 @@
+.handleUpKeep {
+  margin: 0 auto;
+  width: 12rem;
+
+.UpKeepForm {
+  width: 100%;
+  padding: 0 3.2rem;
+  position: relative;
+  >div {
+    margin-bottom: .32rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    .ant-select{
+      height: 0.4rem;
+      line-height: .4rem;
+      font-size: 13px;
+      >div{
+        height: 0.4rem;
+        line-height: .4rem;
+        >div{
+          height: 0.4rem;
+        line-height: .4rem;
+        }
+      }
+    }
+    >label {
+      font-size: 15px;
+      color: #1b1b1b;
+      font-weight: 600;
+
+      >i {
+        color: #d3b078;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: .57rem;
+    }
+
+    &:nth-of-type(2),
+    &:nth-of-type(4),
+    &:last-of-type {
+      >label {
+        margin-left: 8px;
+      }
+    }
+    .ant-input,
+    .ant-select-selection {
+      font-size: 13px;
+      height: 0.4rem !important;
+        //line-height: .4rem !important;
+      cursor: pointer;
+      &:active,
+      &:hover,
+      &:focus {
+        border-color: #d3b078;
+      }
+    }
+    // .add_pad {
+    //   line-height: 32px;
+    //   position:absolute;;
+    //   right:-0.6rem;
+    //   color:#bfbfbf;
+    // }
+  }
+  .add_pad {
+    position: absolute;
+    right: 2.3rem;
+    bottom: 0.75rem;
+    font-size: 14px;
+  }
+}
+
+.submit-btn {
+  width: 100%;
+  height: 0.5rem;
+  line-height: .5rem;
+  text-align: center;
+  margin-bottom: .78rem;
+
+  span {
+    display: inline-block;
+    width: 2.2rem;
+    height: 100%;
+    text-align: center;
+    border: .01rem solid #000;
+    border-radius: .25rem;
+    font-size: 15px;
+    cursor: pointer;
+
+    &:first-child {
+      border: none;
+      color: #fff;
+      background-color: #d3b07a;
+      margin-right: .57rem;
+    }
+  }
+
+}
+
+.changeTab,
+.checkTab {
+  display: inline-block;
+  width: 100%;
+  padding-top: .8rem;
+  border-top: .01rem solid rgba(51, 51, 51, .18);
+  margin-bottom: .8rem;
+  // tr>td {
+  //   border: .01rem solid #fff;
+  // }
+  tr {
+    border-top: .01rem solid rgba(0, 0, 0, 0.1);
+    &:last-of-type {
+      border-bottom: .01rem solid rgba(0, 0, 0, 0.1);
+    }
+  }
+  td {
+    height:100%;
+    border-right: .01rem solid rgba(0, 0, 0, 0.1);
+    &:first-child {
+      border-left: .01rem solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  thead,
+  tbody,
+  tr,
+  td,
+  th {
+    display: inline-block;
+  }
+
+  thead {
+    width: 100%;
+
+    >tr {
+      width: 100%;
+      min-height: 0.8rem;
+      text-align: center;
+      background-color: #d3b078;
+
+      th {
+        line-height: .8rem;
+        font-size: .24rem;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+
+  tbody {
+    width: 100%;
+
+    >tr {
+      width: 100%;
+      min-height: 0.8rem;
+      line-height: .3rem;
+      display: flex;
+      justify-content: flex-start;
+      td {
+        padding:0.25rem 0;
+        width: 20%;
+        height: auto;
+        text-align: center;
+        font-size: 13px;
+        color: #000;
+        white-space:normal; 
+        word-break:break-all;
+
+        span {
+          display: inline-block;
+          height: 0.43rem;
+          line-height: .43rem;
+          text-align: center;
+          color: #000;
+          font-size: 13px;
+          width: 1.3rem;
+          border-radius: .22rem;
+          // background-color: #d3b078;
+          border: .01rem solid #000;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-50%);
+            height: 0.16rem;
+            width: 0.16rem;
+            margin-top: .13rem;
+            background-image: url("../../../../assets/img/purebrand/switchB.png");
+            background-size: 100% 100%;
+            margin-right: .05rem;
+          }
+
+          &:hover {
+            background-color: #d3b078;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            &::before {
+              background-image: url("../../../../assets/img/purebrand/white.png");
+              background-size: 100% 100%;
+            }
+          }
+        }
+      }
+
+      &:first-child {
+        height: 0.6rem;
+        line-height: .3rem;
+        background-color: #eee;
+
+        td {
+          border-right-color: #fff;
+          &:first-of-type{
+            border-left-color: rgba(0, 0, 0, 0.05);
+          }
+          &:last-of-type {
+            border-right-color: rgba(0, 0, 0, 0.05);
+          }
+          span {
+            border: none;
+
+            &::before {
+              display: none;
+            }
+
+            &:hover {
+              background-color: rgba(0, 0, 0, 0);
+              border: none;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.checkTab {
+  margin-bottom: .4rem;
+
+  tbody>tr>td {
+    width: 33.3%;
+  }
+}
+
+.warnning {
+  display: block;
+  margin-bottom: .86rem;
+  text-align: left;
+
+  p {
+    font-size: 13px;
+    color: #666;
+
+    &:last-child {
+      //margin-left: .5rem;
+    }
+  }
+}
+
+.protectBtn {
+  text-align: center;
+  width: 100%;
+  height: 0.51rem;
+  line-height: .51rem;
+
+  span {
+    display: inline-block;
+    height: 100%;
+    width: 2.2rem;
+    text-align: center;
+    border-radius: .25rem;
+    background-color: #d3b078;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+}
+
+.partsdetail {
+  .ant-modal {
+    width: 9rem !important;
+
+    .ant-modal-content {
+      .ant-modal-close {
+        top: -.1rem;
+        right: -.1rem;
+
+        .ant-modal-close-x {
+          height: 0.3rem;
+          line-height: .3rem;
+          font-size: 13px;
+          width: 0.3rem;
+          text-align: center;
+          border-radius: 50%;
+          background-color: #d3b078;
+          color: #fff;
+        }
+      }
+
+      .ant-modal-body {
+        padding: 0;
+
+        img {
+          width: 100%;
+          display: block;
+          margin-bottom: .39rem;
+        }
+
+        h2 {
+          width: 100%;
+          font-size: .24rem;
+          font-weight: 600;
+          padding-left: .4rem;
+          margin-bottom: .2rem;
+        }
+
+        >div {
+          padding-bottom: .37rem;
+
+          p {
+            width: 100%;
+            padding-left: .39rem;
+            font-size: 13px;
+            color: #000;
+
+            &:nth-last-of-type(2),
+            &:last-of-type {
+              &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                transform: translateY(-50%);
+                height: 0.1rem;
+                width: 0.1rem;
+                border-radius: 50%;
+                border: .01rem solid rgba(51, 51, 51, .18);
+                margin-top: .05rem;
+                margin-right: .05rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
